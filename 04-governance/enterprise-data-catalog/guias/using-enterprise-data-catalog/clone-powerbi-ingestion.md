@@ -1,0 +1,108 @@
+---
+title: "Microsoft SQL Server Ingestion"
+slug: "clone-powerbi-ingestion"
+updated: 2026-09-21T11:41:02Z
+published: 2026-09-21T21:00:02Z
+canonical: "helpcenter.securiti.ai/clone-powerbi-ingestion"
+area: governance
+modulo: enterprise-data-catalo
+tipo: guia
+data_captura: 2026-10-08
+---
+
+# Microsoft SQL Server Ingestion
+
+To ingest Microsoft SQL Server metadata into the EDC, read the following required configurations.
+
+### Important capabilities
+
+| **Capability** | **Status** | **Notes** |
+| --- | --- | --- |
+| Data profiling | ✅ | Optionally enabled via configuration |
+| Descriptions | ✅ | Enabled by default |
+| Detect deleted entities | ✅ | Enabled via stateful ingestion |
+| Domains | ✅ | Supported via the `domain` config field |
+| Platform instance | ✅ | Enabled by default |
+
+This plugin extracts the following:
+
+- Metadata for databases, schemas, views and tables
+- Column types associated with each table/view
+- Table, row, and column statistics via optional SQL profiling We have two options for the underlying library used to connect to SQL Server: (1) python-tds and (2) pyodbc. The TDS library is pure Python and hence easier to install, but only PyODBC supports encrypted connections.
+
+### Prerequisites
+
+If you want to ingest MSSQL Jobs and stored procedures (with code) the user credentials needs the proper privileges.
+
+Script for granting the privileges:
+
+```sql
+USE MSDB
+GRANT SELECT ON OBJECT::msdb.dbo.sysjobsteps TO 'USERNAME'
+GRANT SELECT ON OBJECT::msdb.dbo.sysjobs TO 'USERNAME'
+
+USE 'DATA_DB_NAME'
+GRANT VIEW DEFINITION TO 'USERNAME'
+GRANT SELECT ON OBJECT::sys.sql_expression_dependencies TO 'USERNAME'
+```
+
+### **Configuration options**
+
+The following options control what the Microsoft SQL Server source ingests, which objects are included, and how profiling runs. A dot in a field path indicates a nested field in the YAML recipe.
+
+#### General
+
+| **Field** | **Type** | **Default** | **Description** |
+| --- | --- | --- | --- |
+| `convert_urns_to_lowercase` | boolean | False | Enable to convert the SQL Server assets urns to lowercase |
+| `include_descriptions` | boolean | True | Include table descriptions information. |
+| `include_jobs` | boolean | True | Include ingest of MSSQL Jobs. Requires access to the 'msdb' and 'sys' schema. |
+| `include_stored_procedures` | boolean | True | Include ingest of stored procedures. Requires access to the 'sys' schema. |
+| `include_stored_procedures_code` | boolean | True | Include information about object code. |
+| `include_tables` | boolean | True | Whether tables should be ingested. |
+| `include_views` | boolean | True | Whether views should be ingested. |
+
+#### Filter patterns
+
+| **Field** | **Type** | **Default** | **Description** |
+| --- | --- | --- | --- |
+| `database_pattern` | AllowDenyPattern | `{'allow': ['.*'], 'deny': [], 'ignoreCase': True}` | Regex patterns for databases to filter in ingestion. |
+| `database_pattern.allow` | array(string) |  |  |
+| `database_pattern.deny` | array(string) |  |  |
+| `database_pattern.ignoreCase` | boolean | True | Whether to ignore case sensitivity during pattern matching. |
+| `domain` | map(str,AllowDenyPattern) |  | A class to store allow deny regexes |
+| `domain.key.allow` | array(string) |  |  |
+| `domain.key.deny` | array(string) |  |  |
+| `domain.key.ignoreCase` | boolean | True | Whether to ignore case sensitivity during pattern matching. |
+| `profile_pattern` | AllowDenyPattern | `{'allow': ['.*'], 'deny': [], 'ignoreCase': True}` | Regex patterns to filter tables (or specific columns) for profiling during ingestion. Note that only tables allowed by the `table_pattern` will be considered. |
+| `profile_pattern.allow` | array(string) |  |  |
+| `profile_pattern.deny` | array(string) |  |  |
+| `profile_pattern.ignoreCase` | boolean | True | Whether to ignore case sensitivity during pattern matching. |
+| `schema_pattern` | AllowDenyPattern | `{'allow': ['.*'], 'deny': [], 'ignoreCase': True}` | Regex patterns for schemas to filter in ingestion. Specify regex to only match the schema name. e.g. to match all tables in schema analytics, use the regex `'analytics'` |
+| `schema_pattern.allow` | array(string) |  |  |
+| `schema_pattern.deny` | array(string) |  |  |
+| `schema_pattern.ignoreCase` | boolean | True | Whether to ignore case sensitivity during pattern matching. |
+| `table_pattern` | AllowDenyPattern | `{'allow': ['.*'], 'deny': [], 'ignoreCase': True}` | Regex patterns for tables to filter in ingestion. Specify regex to match the entire table name in `database.schema.table` format. e.g. to match all tables starting with customer in Customer database and public schema, use the regex `'Customer.public.customer.*'` |
+| `table_pattern.allow` | array(string) |  |  |
+| `table_pattern.deny` | array(string) |  |  |
+| `table_pattern.ignoreCase` | boolean | True | Whether to ignore case sensitivity during pattern matching. |
+| `view_pattern` | AllowDenyPattern | `{'allow': ['.*'], 'deny': [], 'ignoreCase': True}` | Regex patterns for views to filter in ingestion. Note: Defaults to `table_pattern` if not specified. Specify regex to match the entire view name in `database.schema.view` format. e.g. to match all views starting with customer in Customer database and public schema, use the regex `'Customer.public.customer.*'` |
+| `view_pattern.allow` | array(string) |  |  |
+| `view_pattern.deny` | array(string) |  |  |
+| `view_pattern.ignoreCase` | boolean | True | Whether to ignore case sensitivity during pattern matching. |
+
+#### Profiling
+
+| **Field** | **Type** | **Default** | **Description** |
+| --- | --- | --- | --- |
+| `profiling` | GEProfilingConfig | `{'enabled': False, 'operation_config': {'lower_freq_profile_enabled': False, ...}, ...}` |  |
+| `profiling.enabled` | boolean | False | Whether profiling should be done. |
+| `profiling.include_field_distinct_count` | boolean | True | Whether to profile for the number of distinct values for each column. |
+| `profiling.include_field_max_value` | boolean | True | Whether to profile for the max value of numeric columns. |
+| `profiling.include_field_mean_value` | boolean | True | Whether to profile for the mean value of numeric columns. |
+| `profiling.include_field_median_value` | boolean | True | Whether to profile for the median value of numeric columns. |
+| `profiling.include_field_min_value` | boolean | True | Whether to profile for the min value of numeric columns. |
+| `profiling.include_field_null_count` | boolean | True | Whether to profile for the number of nulls for each column. |
+| `profiling.include_field_sample_values` | boolean | True | Whether to profile for the sample values for all columns. |
+| `profiling.include_field_stddev_value` | boolean | True | Whether to profile for the standard deviation of numeric columns. |
+| `profiling.profile_table_level_only` | boolean | False | Whether to perform profiling at table-level only, or include column-level profiling as well. |
