@@ -1,0 +1,3678 @@
+{
+  "info": {
+    "_postman_id": "f7e790b8-2dc2-4ba9-971b-d1f253475ca3",
+    "name": "IaaS Cloud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38393390"
+  },
+  "item": [
+    {
+      "name": "OAuth2 Authentication",
+      "item": [
+        {
+          "name": "Generate access token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/core/v1/oauth/get_access_token",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "oauth",
+                "get_access_token"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Generate access token",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/core/v1/oauth/get_access_token",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "oauth",
+                    "get_access_token"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 08 Aug 2024 11:31:36 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24951"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1723116821"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"access_token\": \"xxxx\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "General",
+      "item": [
+        {
+          "name": "Fetch all languages & localities",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/classification/languages_localities",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "classification",
+                "languages_localities"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Fetch all languages & localities",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/classification/languages_localities",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "classification",
+                    "languages_localities"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 19 Apr 2022 06:53:47 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24999"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1650352127"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"languages\": [\n            \"es\",\n            \"en\",\n            \"pt\"\n        ],\n        \"localization\": [\n            \"ae\",\n            \"ar\",\n            \"at\",\n            \"au\",\n            \"be\",\n            \"br\",\n            \"bg\",\n            \"ca\",\n            \"ch\",\n            \"cl\",\n            \"cn\",\n            \"co\",\n            \"cy\",\n            \"cz\",\n            \"de\",\n            \"dk\",\n            \"ee\",\n            \"es\",\n            \"fi\",\n            \"fr\",\n            \"gr\",\n            \"hk\",\n            \"hr\",\n            \"hu\",\n            \"id\",\n            \"ie\",\n            \"il\",\n            \"in\",\n            \"it\",\n            \"jp\",\n            \"kr\",\n            \"lt\",\n            \"lu\",\n            \"lv\",\n            \"mt\",\n            \"mx\",\n            \"my\",\n            \"nl\",\n            \"no\",\n            \"nz\",\n            \"pe\",\n            \"ph\",\n            \"pl\",\n            \"pt\",\n            \"py\",\n            \"ro\",\n            \"th\",\n            \"tr\",\n            \"tw\",\n            \"sa\",\n            \"se\",\n            \"si\",\n            \"sk\",\n            \"sg\",\n            \"uk\",\n            \"us\",\n            \"za\",\n            \"all\"\n        ],\n        \"all_languages\": [\n            \"en\",\n            \"pt\",\n            \"es\",\n            \"de\"\n        ],\n        \"all_localization\": [\n            \"ae\",\n            \"ar\",\n            \"at\",\n            \"au\",\n            \"be\",\n            \"br\",\n            \"bg\",\n            \"ca\",\n            \"ch\",\n            \"cl\",\n            \"cn\",\n            \"co\",\n            \"cy\",\n            \"cz\",\n            \"de\",\n            \"dk\",\n            \"ee\",\n            \"es\",\n            \"fi\",\n            \"fr\",\n            \"gr\",\n            \"hk\",\n            \"hr\",\n            \"hu\",\n            \"id\",\n            \"ie\",\n            \"il\",\n            \"in\",\n            \"it\",\n            \"jp\",\n            \"kr\",\n            \"lt\",\n            \"lu\",\n            \"lv\",\n            \"mt\",\n            \"mx\",\n            \"my\",\n            \"nl\",\n            \"no\",\n            \"nz\",\n            \"pe\",\n            \"ph\",\n            \"pl\",\n            \"pt\",\n            \"py\",\n            \"ro\",\n            \"th\",\n            \"tr\",\n            \"tw\",\n            \"sa\",\n            \"se\",\n            \"si\",\n            \"sk\",\n            \"sg\",\n            \"uk\",\n            \"us\",\n            \"za\",\n            \"all\"\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch list of users",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/users",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "users"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Fetch list of users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/users",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "users"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 12 Apr 2022 06:59:24 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"count\": 560,\n    \"next\": \"/core/v1/admin/users?p=2\",\n    \"previous\": \"\",\n    \"data\": [\n        {\n            \"created_by\": 0,\n            \"modified_by\": 1,\n            \"created_at\": 0,\n            \"modified_at\": 1571980972607,\n            \"tenant_id\": \"xxxx\",\n            \"id\": 1,\n            \"is_active\": true,\n            \"user_name\": \"john.doe@securiti.ai\",\n            \"email\": \"john.doe@securiti.ai\",\n            \"first_name\": \"xxxx\",\n            \"middle_name\": \"\",\n            \"last_name\": \"xxxx\",\n            \"nickname\": \"\",\n            \"office\": \"\",\n            \"location\": \"\",\n            \"join_date\": \"\",\n            \"cell_phone\": \"xxxx\",\n            \"photo_url\": \"https://app.securiti.ai/core/v1/admin/users/photo?id=1\",\n            \"time_zone\": \"\",\n            \"role\": \"ADMIN\",\n            \"last_login\": 1649740699530,\n            \"messaging_id\": \"xxxx\",\n            \"is_support_user\": false,\n            \"user_type\": 1,\n            \"is_locked\": false,\n            \"access_profile_id\": 1211,\n            \"sso_created\": false\n        },\n        {\n            \"created_by\": 1,\n            \"modified_by\": 172,\n            \"created_at\": 1567508760143,\n            \"modified_at\": 1597840392056,\n            \"tenant_id\": \"xxxx\",\n            \"id\": 69,\n            \"is_active\": false,\n            \"user_name\": \"john.doe@securiti.ai\",\n            \"email\": \"john.doe@securiti.ai\",\n            \"first_name\": \"xxxx\",\n            \"middle_name\": \"\",\n            \"last_name\": \"xxxx\",\n            \"nickname\": \"\",\n            \"office\": \"\",\n            \"location\": \"\",\n            \"join_date\": \"\",\n            \"cell_phone\": \"\",\n            \"photo_url\": \"\",\n            \"time_zone\": \"\",\n            \"role\": \"DPO\",\n            \"last_login\": 0,\n            \"messaging_id\": \"xxxx\",\n            \"is_support_user\": false,\n            \"user_type\": 1,\n            \"is_locked\": false,\n            \"access_profile_id\": 1211,\n            \"sso_created\": false\n        },\n        {\n            \"created_by\": 1,\n            \"modified_by\": 146,\n            \"created_at\": 1567600897909,\n            \"modified_at\": 1619644496043,\n            \"tenant_id\": \"xxxx\",\n            \"id\": 75,\n            \"is_active\": true,\n            \"user_name\": \"john.doe@securiti.ai\",\n            \"email\": \"john.doe@securiti.ai\",\n            \"first_name\": \"xxxx\",\n            \"middle_name\": \"\",\n            \"last_name\": \"xxxx\",\n            \"nickname\": \"\",\n            \"office\": \"\",\n            \"location\": \"\",\n            \"join_date\": \"\",\n            \"cell_phone\": \"\",\n            \"photo_url\": \"\",\n            \"time_zone\": \"\",\n            \"role\": \"GUEST\",\n            \"last_login\": 1591676075480,\n            \"messaging_id\": \"xxxx\",\n            \"is_support_user\": false,\n            \"user_type\": 3,\n            \"is_locked\": false,\n            \"access_profile_id\": 1210,\n            \"sso_created\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch meta details of IaaS Connectors",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta?system_type=IaaS",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "asset_sync",
+                "connector_meta"
+              ],
+              "query": [
+                {
+                  "key": "system_type",
+                  "value": "IaaS"
+                }
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200]Fetches meta details of IaaS Connectors",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://app.securiti.ai/privaci/v1/admin/asset_sync/connector_meta?system_type=IaaS",
+                  "protocol": "https",
+                  "host": [
+                    "app",
+                    "securiti",
+                    "ai"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "asset_sync",
+                    "connector_meta"
+                  ],
+                  "query": [
+                    {
+                      "key": "system_type",
+                      "value": "IaaS"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 13 Mar 2025 10:09:49 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "50000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "49972"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741860907"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"id\": \"aws\",\n            \"name\": \"Amazon Web Services\",\n            \"auth_type\": \"roles\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Amazon Web Services\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\":[{\\\"display\\\":\\\"Enable AWS Security Posture Management\\\",\\\"hint\\\":\\\"This will allow you to define AWS Security Posture Policies\\\",\\\"is_editable\\\":true,\\\"is_json\\\":true,\\\"key\\\":\\\"aws_configuration_scan_enabled\\\",\\\"label\\\":\\\"Scan Configuration Settings\\\",\\\"optional\\\":true,\\\"type\\\":\\\"checkbox\\\"},{\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_scan_mode\\\",\\\"label\\\":\\\"Select Mode\\\",\\\"optional\\\":true,\\\"options\\\":[{\\\"default\\\":true,\\\"hint\\\":\\\"The AWS IAM roles used will only have read privileges\\\",\\\"label\\\":\\\"Monitor only\\\",\\\"value\\\":\\\"MONITOR_ONLY\\\"},{\\\"hint\\\":\\\"The AWS IAM roles used will have read/write privileges\\\",\\\"label\\\":\\\"Monitor and remediate\\\",\\\"value\\\":\\\"MONITOR_AND_REMEDIATE\\\"}],\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"},\\\"type\\\":\\\"radio\\\"},{\\\"expandable\\\":true,\\\"fields\\\":[{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"format\\\":\\\"^[a-zA-Z0-9_.-]*$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_master_account\\\",\\\"label\\\":\\\"AWS Master Account ID\\\",\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_master_discovery_role\\\",\\\"label\\\":\\\"AWS Discovery Master IAM Role\\\",\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[a-zA-Z0-9_., \\\\n-]*$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_member_accounts\\\",\\\"label\\\":\\\"AWS Member Account Ids\\\",\\\"type\\\":\\\"textarea\\\"},{\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_member_discovery_role\\\",\\\"label\\\":\\\"AWS Discovery Member IAM Role\\\",\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_remediation_member_role\\\",\\\"label\\\":\\\"Config Remediation Member IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_mode\\\",\\\"value\\\":\\\"MONITOR_AND_REMEDIATE\\\"},\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[a-zA-Z0-9_.-]*$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"key\\\":\\\"aws_securiti_account\\\",\\\"label\\\":\\\"Securiti Account ID\\\",\\\"readonly\\\":true,\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[a-zA-Z0-9_.-]*$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"key\\\":\\\"aws_external_id\\\",\\\"label\\\":\\\"External ID\\\",\\\"out_field_link\\\":{\\\"label\\\":\\\"Regenerate\\\",\\\"type\\\":\\\"regenerate\\\"},\\\"readonly\\\":true,\\\"type\\\":\\\"text\\\"},{\\\"is_editable\\\":true,\\\"item_secondary_text\\\":\\\"key\\\",\\\"item_text\\\":\\\"value\\\",\\\"item_value\\\":\\\"key\\\",\\\"key\\\":\\\"aws_regions\\\",\\\"label\\\":\\\"Select Region(s)\\\",\\\"searchable\\\":true,\\\"type\\\":\\\"dropdown-multiple\\\"},{\\\"break\\\":true,\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"}},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_configuration_scan_master_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_scan_master_role\\\",\\\"label\\\":\\\"Config Scan Master IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"},\\\"type\\\":\\\"text\\\"},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_configuration_scan_member_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_scan_member_role\\\",\\\"label\\\":\\\"Config Scan Member IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"},\\\"type\\\":\\\"text\\\"},{\\\"break\\\":true},{\\\"is_editable\\\":true,\\\"is_json\\\":true,\\\"key\\\":\\\"aws_include_data_scan_role\\\",\\\"label\\\":\\\"Associate Pods/Elastic Pods\\\",\\\"optional\\\":true,\\\"type\\\":\\\"checkbox\\\"},{\\\"default\\\":\\\"elastic_pods\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_securiti_appliances_type\\\",\\\"label\\\":\\\"Select Appliance Type\\\",\\\"options\\\":[{\\\"text\\\":\\\"Pods\\\",\\\"value\\\":\\\"pods\\\"},{\\\"text\\\":\\\"Elastic Pods\\\",\\\"value\\\":\\\"elastic_pods\\\"}],\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"translate_options\\\":true,\\\"type\\\":\\\"dropdown\\\"},{\\\"is_editable\\\":true,\\\"is_json\\\":true,\\\"item_secondary_text\\\":\\\"region\\\",\\\"item_text\\\":\\\"name\\\",\\\"item_value\\\":\\\"id\\\",\\\"key\\\":\\\"securiti_appliances\\\",\\\"label\\\":\\\"Select Elastic Pods\\\",\\\"label_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"Select Elastic Pods\\\",\\\"pods\\\":\\\"Select Pod\\\"}},\\\"no_data_default\\\":\\\"No available appliance based on master account Id and AWS region selection\\\",\\\"no_data_default_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"This field is dependent upon Master Account ID and Regions\\\",\\\"pods\\\":\\\"No Data Available\\\"}},\\\"out_field_link\\\":{\\\"label\\\":\\\"Create New Elastic Pods\\\",\\\"link\\\":\\\"/#/settings/elastic-pods?mode=0\\\\u0026tab=BASIC_INFORMATION\\\",\\\"new_tab\\\":false,\\\"type\\\":\\\"link\\\"},\\\"out_field_link_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":{\\\"label\\\":\\\"Create New Elastic Pods\\\",\\\"link\\\":\\\"/#/settings/elastic-pods?mode=0\\\\u0026tab=BASIC_INFORMATION\\\"},\\\"pods\\\":{\\\"label\\\":\\\"Create New Pods\\\",\\\"link\\\":\\\"/#/settings/pods?mode=0\\\\u0026tab=BASIC_INFORMATION\\\"}}},\\\"return_as_array\\\":false,\\\"return_as_array_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":false,\\\"pods\\\":true}},\\\"return_object\\\":true,\\\"searchable\\\":true,\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"tooltip\\\":\\\"This field is dependent upon Master Account ID and Regions\\\",\\\"tooltip_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"This field is dependent upon Master Account ID and Regions\\\",\\\"pods\\\":null}},\\\"type\\\":\\\"dropdown-multiple\\\",\\\"type_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"dropdown-multiple\\\",\\\"pods\\\":\\\"dropdown\\\"}}},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_scan_master_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_master_scan_role\\\",\\\"label\\\":\\\"AWS Scan Master IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"type\\\":\\\"text\\\"},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_scan_member_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_member_scan_role\\\",\\\"label\\\":\\\"AWS Scan Member IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"type\\\":\\\"text\\\"},{\\\"break\\\":true,\\\"view_mode_only\\\":true},{\\\"key\\\":\\\"aws_master_cf_template_url\\\",\\\"label\\\":\\\"Master Account CF Template\\\",\\\"type\\\":\\\"file-download\\\",\\\"view_mode_only\\\":true},{\\\"key\\\":\\\"aws_member_cf_template_url\\\",\\\"label\\\":\\\"Member Account CF Template\\\",\\\"type\\\":\\\"file-download\\\",\\\"view_mode_only\\\":true}],\\\"heading\\\":\\\"Advanced\\\"},{\\\"renderComponent\\\":\\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"ft.access-intelligence-v2.aws-graph\"\n        },\n        {\n            \"id\": \"azure\",\n            \"name\": \"Azure\",\n            \"auth_type\": \"config\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Azure\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\": [{\\\"break\\\": true}, {\\\"renderComponent\\\": \\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"\"\n        },\n        {\n            \"id\": \"gcp\",\n            \"name\": \"Google Cloud Platform\",\n            \"auth_type\": \"credentials_file\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Google Cloud Platform\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\": [{\\\"break\\\": true}, {\\\"renderComponent\\\": \\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"credentials_json\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"\"\n        },\n        {\n            \"id\": \"oci\",\n            \"name\": \"Oracle Cloud Infrastructure\",\n            \"auth_type\": \"config\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Oracle Cloud Infrastructure\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\": [{\\\"break\\\": true}, {\\\"renderComponent\\\": \\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch details of IaaS Connectors",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "iaas_connector",
+                "id"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Fetch details of IaaS Connectors",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "iaas_connector",
+                    "id"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 13 Mar 2025 05:03:01 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24938"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741842565"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Iaas Connectors fetched successfully\",\n    \"data\": {\n        \"queryXdsIaasConnector\": {\n            \"id\": 56,\n            \"connId\": \"0x6301feb45c907\",\n            \"name\": \"gcp-org-prj-exclude-scan\",\n            \"tenantId\": \"xxxx\",\n            \"ownerId\": 1,\n            \"provider\": \"GCP\",\n            \"orgId\": \"xxxx\",\n            \"orgUnit\": 1,\n            \"download\": true,\n            \"opArgs\": \"{\\\"acm_permissions\\\":[],\\\"acm_roles\\\":[],\\\"all_projects_in_org\\\":\\\"true\\\",\\\"auto_discovery\\\":true,\\\"auto_remediation\\\":false,\\\"auto_scan\\\":true,\\\"config_scc_creds\\\":false,\\\"credentials_type\\\":\\\"ORG\\\",\\\"data_scan_tags\\\":{\\\"keyValuePair\\\":[{\\\"key\\\":\\\"owner\\\",\\\"value\\\":\\\"xxxx\\\"},{\\\"key\\\":\\\"owner\\\",\\\"value\\\":\\\"xxxx\\\"}],\\\"type\\\":\\\"exclude\\\"},\\\"discoveryCredsVersion\\\":\\\"2.2\\\",\\\"disk_scan_tags\\\":{\\\"keyValuePair\\\":[{\\\"key\\\":\\\"diskscan\\\",\\\"value\\\":\\\"true\\\"}],\\\"type\\\":\\\"exclude\\\"},\\\"enable_acm\\\":false,\\\"enable_asset_discovery_email\\\":false,\\\"enable_classification_info\\\":false,\\\"enable_data_security_posture\\\":true,\\\"enable_disk_scan\\\":true,\\\"enable_flowlogs\\\":false,\\\"enable_pod_deployment\\\":true,\\\"enable_scc\\\":false,\\\"gcp_data_scan_pod_sa_email\\\":\\\"john.doe@securiti.ai\\\",\\\"gcp_data_scan_project_id\\\":\\\"xxxx\\\",\\\"gcp_data_scan_project_number\\\":\\\"xxxx\\\",\\\"gcp_securiti_impersonator_sa_name\\\":\\\"securiti-pod-orchestrator\\\",\\\"gcp_securiti_pod_vm_sa_name\\\":\\\"securiti-pod-vm\\\",\\\"gcp_securiti_project_id\\\":\\\"xxxx\\\",\\\"is_frictionless\\\":true,\\\"organization_id\\\":\\\"xxxx\\\",\\\"project_id\\\":\\\"\\\",\\\"region\\\":\\\"us-central1\\\",\\\"regions\\\":[\\\"us-central1\\\"],\\\"rw_permissions\\\":[],\\\"rw_roles\\\":[],\\\"scan_location\\\":\\\"securiti_cloud\\\",\\\"scan_permissions\\\":[\\\"storage.buckets.list\\\",\\\"storage.objects.get\\\",\\\"storage.objects.list\\\"],\\\"scan_roles\\\":[\\\"roles/viewer\\\",\\\"roles/bigquery.dataViewer\\\",\\\"roles/bigquery.jobUser\\\",\\\"roles/bigquery.readSessionUser\\\"],\\\"scc_org_id\\\":\\\"\\\",\\\"scc_permissions\\\":[],\\\"scc_roles\\\":[],\\\"scc_source_id\\\":\\\"\\\",\\\"scope\\\":\\\"ORG\\\",\\\"securiti_auto_scan_sa_auth_type\\\":\\\"sa_key_json\\\",\\\"securiti_auto_scan_sa_email\\\":\\\"john.doe@securiti.ai\\\",\\\"securiti_data_scan_sa_auth_type\\\":\\\"sa_impersonation\\\",\\\"securiti_data_scan_sa_email\\\":\\\"john.doe@securiti.ai\\\",\\\"securiti_data_scan_sa_name\\\":\\\"xxxx\\\",\\\"securiti_disk_scan_sa_auth_type\\\":\\\"sa_impersonation\\\",\\\"securiti_disk_scan_sa_email\\\":\\\"john.doe@securiti.ai\\\",\\\"securiti_disk_scan_sa_name\\\":\\\"xxxx\\\",\\\"securiti_execution_id\\\":\\\"xxxx\\\",\\\"securiti_read_only_sa_auth_type\\\":\\\"sa_key_json\\\",\\\"securiti_read_only_sa_email\\\":\\\"john.doe@securiti.ai\\\",\\\"storage_location\\\":\\\"US\\\"}\",\n            \"cloudParams\": \"xxxx\",\n            \"outputParams\": \"\",\n            \"state\": \"\",\n            \"status\": \"PENDING\",\n            \"version\": \"\",\n            \"is_frictionless\": true,\n            \"createdAt\": \"2025-03-12T07:11:36.358Z\",\n            \"updatedAt\": \"2025-03-12T07:11:36.358Z\",\n            \"iaasActConnMapping\": null\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Activate an IaaS Connector",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"owner\":\"john.doe@securiti.ai\",\"tenant_id\":\"xxxx\",\"cloud_config\":{\"cloud_type\":\"gcp\",\"includeAccounts\":[]}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id/activate",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "iaas_connector",
+                "id",
+                "activate"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Activate an IaaS Connector",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"owner\": \"john.doe@securiti.ai\",\n    \"tenant_id\": \"xxxx\",\n    \"cloud_config\": {\n        \"cloud_type\": \"gcp\",\n        \"includeAccounts\": []\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id/activate",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "iaas_connector",
+                    "id",
+                    "activate"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 13 Mar 2025 09:35:56 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24965"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741859344"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Iaas Connector activated successfully\",\n    \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Deactivate an IaaS Connector",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"owner\":\"john.doe@securiti.ai\",\"tenant_id\":\"xxxx\",\"cloud_config\":{\"cloud_type\":\"gcp\",\"includeAccounts\":[\"xxxx\"]}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id/deactivate",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "iaas_connector",
+                "id",
+                "deactivate"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Deactivate IaaS Connector",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"owner\": \"john.doe@securiti.ai\",\n    \"tenant_id\": \"xxxx\",\n    \"cloud_config\": {\n        \"cloud_type\": \"gcp\",\n        \"includeAccounts\": [\n            \"xxxx\"\n        ]\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id/deactivate",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "iaas_connector",
+                    "id",
+                    "deactivate"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 13 Mar 2025 09:01:47 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24956"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741857134"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"IaaS Connector deactivation is in progress\",\n    \"data\": null\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Organizations",
+      "item": [
+        {
+          "name": "Fetch organization units",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/org_units?limit=20&p=1&sort=name",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "org_units"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "20"
+                },
+                {
+                  "key": "p",
+                  "value": "1"
+                },
+                {
+                  "key": "sort",
+                  "value": "name"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Fetch organization units",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/org_units?limit=20&p=1&sort=name",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "org_units"
+                  ],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "20"
+                    },
+                    {
+                      "key": "p",
+                      "value": "1"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "name"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 30 Sep 2022 06:09:11 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24999"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1664519051"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"created_at\": 1661497096607,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 1 Desc\",\n            \"id\": 34,\n            \"modified_at\": 1661497096607,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 1\",\n            \"number_of_users\": 40\n        },\n        {\n            \"created_at\": 1661845313063,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 2 Desc\",\n            \"id\": 67,\n            \"modified_at\": 1661845313063,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 2\",\n            \"number_of_users\": 38\n        },\n        {\n            \"created_at\": 1661845333468,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 3 Desc\",\n            \"id\": 68,\n            \"modified_at\": 1661845333468,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 3\",\n            \"number_of_users\": 36\n        },\n        {\n            \"created_at\": 1661845371731,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 4 Desc\",\n            \"id\": 69,\n            \"modified_at\": 1661845371731,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 4\",\n            \"number_of_users\": 37\n        },\n        {\n            \"created_at\": 1661306342879,\n            \"created_by\": 0,\n            \"description\": \"\",\n            \"id\": 1,\n            \"modified_at\": 1661306342879,\n            \"modified_by\": 0,\n            \"name\": \"Default Organization\",\n            \"number_of_users\": 57\n        },\n        {\n            \"created_at\": 1663836735337,\n            \"created_by\": 1289,\n            \"description\": \"\",\n            \"id\": 102,\n            \"modified_at\": 1663836735337,\n            \"modified_by\": 1289,\n            \"name\": \"New_Org\",\n            \"number_of_users\": 36\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Switch default org",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"user_id\": 2905,\n    \"org_unit\": 175\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/org_units/set_default_org_unit",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "org_units",
+                "set_default_org_unit"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Switch default org",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"user_id\": 2905,\n    \"org_unit\": 175\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/org_units/set_default_org_unit",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "org_units",
+                    "set_default_org_unit"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Oct 2022 06:23:24 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24940"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1666074895"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Successfully completed request\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch org units for a user",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/org_units/user/:userID",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "org_units",
+                "user",
+                ":userID"
+              ],
+              "variable": [
+                {
+                  "key": "userID",
+                  "value": "34"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Fetch org units for a user",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/org_units/user/34",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "org_units",
+                    "user",
+                    "34"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Sep 2022 11:20:47 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24937"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1663845701"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Successfully completed request\",\n    \"data\": [\n        {\n            \"created_at\": 1661306342879,\n            \"created_by\": 0,\n            \"description\": \"\",\n            \"id\": 1,\n            \"is_active\": true,\n            \"modified_at\": 1661306342879,\n            \"modified_by\": 0,\n            \"name\": \"Default Organization\",\n            \"tenant_id\": \"xxxx\"\n        },\n        {\n            \"created_at\": 1661497096607,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 1 Desc\",\n            \"id\": 34,\n            \"modified_at\": 1661497096607,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 1\",\n            \"tenant_id\": \"xxxx\"\n        },\n        {\n            \"created_at\": 1661845313063,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 2 Desc\",\n            \"id\": 67,\n            \"modified_at\": 1661845313063,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 2\",\n            \"tenant_id\": \"xxxx\"\n        },\n        {\n            \"created_at\": 1661845333468,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 3 Desc\",\n            \"id\": 68,\n            \"modified_at\": 1661845333468,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 3\",\n            \"tenant_id\": \"xxxx\"\n        },\n        {\n            \"created_at\": 1661845371731,\n            \"created_by\": 166,\n            \"description\": \"AQ Org 4 Desc\",\n            \"id\": 69,\n            \"modified_at\": 1661845371731,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 4\",\n            \"tenant_id\": \"xxxx\"\n        },\n        {\n            \"created_at\": 1663836735337,\n            \"created_by\": 1289,\n            \"description\": \"\",\n            \"id\": 102,\n            \"modified_at\": 1663836735337,\n            \"modified_by\": 1289,\n            \"name\": \"New_Org\",\n            \"tenant_id\": \"xxxx\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Add an organization",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"AQ org 1\",\n    \"description\": \"Testing\"\n}"
+            },
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/org_units",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "org_units"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Add an organization",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"AQ org 1\",\n    \"description\": \"Testing\"\n}"
+                },
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/org_units",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "org_units"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 30 Sep 2022 08:06:00 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24942"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1664525418"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Create request completed successfully\",\n    \"data\": {\n        \"created_by\": 2905,\n        \"modified_by\": 2905,\n        \"created_at\": 1664525153850,\n        \"modified_at\": 1664525153850,\n        \"tenant_id\": \"xxxx\",\n        \"id\": 106,\n        \"name\": \"AQ org 1\",\n        \"description\": \"Testing\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Import organizations as CSV file",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "uploadFile",
+                  "type": "file",
+                  "src": "/Users/username/Desktop/Organization.csv"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/org_units/import",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "org_units",
+                "import"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Import organizations as CSV file",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "uploadFile",
+                      "type": "file",
+                      "src": [
+                        "/Users/username/Desktop/Organization.csv"
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/org_units/import",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "org_units",
+                    "import"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 30 Sep 2022 08:16:02 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24992"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1664526395"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Successfully completed request\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Edit an organization",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"AQ org\",\n    \"description\": \"test\"\n}"
+            },
+            "url": {
+              "raw": "{{host-url}}/core/v1/admin/org_units/:orgID",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "admin",
+                "org_units",
+                ":orgID"
+              ],
+              "variable": [
+                {
+                  "key": "orgID",
+                  "value": "104"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Edit an organization",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"AQ org\",\n    \"description\": \"test\"\n}"
+                },
+                "url": {
+                  "raw": "{{host-url}}/core/v1/admin/org_units/:orgID",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "admin",
+                    "org_units",
+                    ":orgID"
+                  ],
+                  "variable": [
+                    {
+                      "key": "orgID",
+                      "value": "104"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 30 Sep 2022 08:08:37 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24937"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1664525418"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Update successful\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AWS",
+      "item": [
+        {
+          "name": "Fetches metadata of AWS IaaS connector",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/aws",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "asset_sync",
+                "connector_meta",
+                "aws"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200]Fetches metadata of AWS IaaS connector",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/aws",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "asset_sync",
+                    "connector_meta",
+                    "aws"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 14 Mar 2025 09:40:17 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "50000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "49998"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741946090"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"id\": \"aws\",\n            \"name\": \"Amazon Web Services\",\n            \"auth_type\": \"roles\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Amazon Web Services\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\":[{\\\"display\\\":\\\"Enable AWS Security Posture Management\\\",\\\"hint\\\":\\\"This will allow you to define AWS Security Posture Policies\\\",\\\"is_editable\\\":true,\\\"is_json\\\":true,\\\"key\\\":\\\"aws_configuration_scan_enabled\\\",\\\"label\\\":\\\"Scan Configuration Settings\\\",\\\"optional\\\":true,\\\"type\\\":\\\"checkbox\\\"},{\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_scan_mode\\\",\\\"label\\\":\\\"Select Mode\\\",\\\"optional\\\":true,\\\"options\\\":[{\\\"default\\\":true,\\\"hint\\\":\\\"The AWS IAM roles used will only have read privileges\\\",\\\"label\\\":\\\"Monitor only\\\",\\\"value\\\":\\\"MONITOR_ONLY\\\"},{\\\"hint\\\":\\\"The AWS IAM roles used will have read/write privileges\\\",\\\"label\\\":\\\"Monitor and remediate\\\",\\\"value\\\":\\\"MONITOR_AND_REMEDIATE\\\"}],\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"},\\\"type\\\":\\\"radio\\\"},{\\\"expandable\\\":true,\\\"fields\\\":[{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"format\\\":\\\"^[a-zA-Z0-9_.-]*$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_master_account\\\",\\\"label\\\":\\\"AWS Master Account ID\\\",\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_master_discovery_role\\\",\\\"label\\\":\\\"AWS Discovery Master IAM Role\\\",\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[a-zA-Z0-9_., \\\\n-]*$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_member_accounts\\\",\\\"label\\\":\\\"AWS Member Account Ids\\\",\\\"type\\\":\\\"textarea\\\"},{\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_member_discovery_role\\\",\\\"label\\\":\\\"AWS Discovery Member IAM Role\\\",\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_remediation_member_role\\\",\\\"label\\\":\\\"Config Remediation Member IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_mode\\\",\\\"value\\\":\\\"MONITOR_AND_REMEDIATE\\\"},\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[a-zA-Z0-9_.-]*$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"key\\\":\\\"aws_securiti_account\\\",\\\"label\\\":\\\"Securiti Account ID\\\",\\\"readonly\\\":true,\\\"type\\\":\\\"text\\\"},{\\\"format\\\":\\\"^[a-zA-Z0-9_.-]*$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"key\\\":\\\"aws_external_id\\\",\\\"label\\\":\\\"External ID\\\",\\\"out_field_link\\\":{\\\"label\\\":\\\"Regenerate\\\",\\\"type\\\":\\\"regenerate\\\"},\\\"readonly\\\":true,\\\"type\\\":\\\"text\\\"},{\\\"is_editable\\\":true,\\\"item_secondary_text\\\":\\\"key\\\",\\\"item_text\\\":\\\"value\\\",\\\"item_value\\\":\\\"key\\\",\\\"key\\\":\\\"aws_regions\\\",\\\"label\\\":\\\"Select Region(s)\\\",\\\"searchable\\\":true,\\\"type\\\":\\\"dropdown-multiple\\\"},{\\\"break\\\":true,\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"}},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_configuration_scan_master_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"hide_based_upon\\\":{\\\"key\\\":\\\"aws_on_prem\\\"},\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_scan_master_role\\\",\\\"label\\\":\\\"Config Scan Master IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"},\\\"type\\\":\\\"text\\\"},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_configuration_scan_member_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_configuration_scan_member_role\\\",\\\"label\\\":\\\"Config Scan Member IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_configuration_scan_enabled\\\"},\\\"type\\\":\\\"text\\\"},{\\\"break\\\":true},{\\\"is_editable\\\":true,\\\"is_json\\\":true,\\\"key\\\":\\\"aws_include_data_scan_role\\\",\\\"label\\\":\\\"Associate Pods/Elastic Pods\\\",\\\"optional\\\":true,\\\"type\\\":\\\"checkbox\\\"},{\\\"default\\\":\\\"elastic_pods\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_securiti_appliances_type\\\",\\\"label\\\":\\\"Select Appliance Type\\\",\\\"options\\\":[{\\\"text\\\":\\\"Pods\\\",\\\"value\\\":\\\"pods\\\"},{\\\"text\\\":\\\"Elastic Pods\\\",\\\"value\\\":\\\"elastic_pods\\\"}],\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"translate_options\\\":true,\\\"type\\\":\\\"dropdown\\\"},{\\\"is_editable\\\":true,\\\"is_json\\\":true,\\\"item_secondary_text\\\":\\\"region\\\",\\\"item_text\\\":\\\"name\\\",\\\"item_value\\\":\\\"id\\\",\\\"key\\\":\\\"securiti_appliances\\\",\\\"label\\\":\\\"Select Elastic Pods\\\",\\\"label_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"Select Elastic Pods\\\",\\\"pods\\\":\\\"Select Pod\\\"}},\\\"no_data_default\\\":\\\"No available appliance based on master account Id and AWS region selection\\\",\\\"no_data_default_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"This field is dependent upon Master Account ID and Regions\\\",\\\"pods\\\":\\\"No Data Available\\\"}},\\\"out_field_link\\\":{\\\"label\\\":\\\"Create New Elastic Pods\\\",\\\"link\\\":\\\"/#/settings/elastic-pods?mode=0\\\\u0026tab=BASIC_INFORMATION\\\",\\\"new_tab\\\":false,\\\"type\\\":\\\"link\\\"},\\\"out_field_link_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":{\\\"label\\\":\\\"Create New Elastic Pods\\\",\\\"link\\\":\\\"/#/settings/elastic-pods?mode=0\\\\u0026tab=BASIC_INFORMATION\\\"},\\\"pods\\\":{\\\"label\\\":\\\"Create New Pods\\\",\\\"link\\\":\\\"/#/settings/pods?mode=0\\\\u0026tab=BASIC_INFORMATION\\\"}}},\\\"return_as_array\\\":false,\\\"return_as_array_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":false,\\\"pods\\\":true}},\\\"return_object\\\":true,\\\"searchable\\\":true,\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"tooltip\\\":\\\"This field is dependent upon Master Account ID and Regions\\\",\\\"tooltip_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"This field is dependent upon Master Account ID and Regions\\\",\\\"pods\\\":null}},\\\"type\\\":\\\"dropdown-multiple\\\",\\\"type_based_upon\\\":{\\\"source\\\":\\\"aws_securiti_appliances_type\\\",\\\"switch_with\\\":{\\\"elastic_pods\\\":\\\"dropdown-multiple\\\",\\\"pods\\\":\\\"dropdown\\\"}}},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_scan_master_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_master_scan_role\\\",\\\"label\\\":\\\"AWS Scan Master IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"type\\\":\\\"text\\\"},{\\\"disabled_based_upon\\\":{\\\"key\\\":\\\"aws_use_same_scan_member_role_as_discovery\\\"},\\\"format\\\":\\\"^[\\\\\\\\w+=,.@/-]+$\\\",\\\"is_editable\\\":true,\\\"key\\\":\\\"aws_member_scan_role\\\",\\\"label\\\":\\\"AWS Scan Member IAM Role\\\",\\\"show_based_upon\\\":{\\\"key\\\":\\\"aws_include_data_scan_role\\\"},\\\"type\\\":\\\"text\\\"},{\\\"break\\\":true,\\\"view_mode_only\\\":true},{\\\"key\\\":\\\"aws_master_cf_template_url\\\",\\\"label\\\":\\\"Master Account CF Template\\\",\\\"type\\\":\\\"file-download\\\",\\\"view_mode_only\\\":true},{\\\"key\\\":\\\"aws_member_cf_template_url\\\",\\\"label\\\":\\\"Member Account CF Template\\\",\\\"type\\\":\\\"file-download\\\",\\\"view_mode_only\\\":true}],\\\"heading\\\":\\\"Advanced\\\"},{\\\"renderComponent\\\":\\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"ft.access-intelligence-v2.aws-graph\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch meta details of AWS IaaS connector by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "iaas_connector",
+                "id"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Fetch meta details of AWS IaaS connector by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "iaas_connector",
+                    "id"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 24 Mar 2025 07:07:13 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24973"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742800766"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Iaas Connectors fetched successfully\",\n    \"data\": {\n        \"queryXdsIaasConnector\": {\n            \"id\": 44,\n            \"connId\": \"0x63114571014b0\",\n            \"name\": \"aws-cloud\",\n            \"tenantId\": \"xxxx\",\n            \"ownerId\": 1,\n            \"provider\": \"AWS\",\n            \"orgId\": \"\",\n            \"orgUnit\": 1,\n            \"download\": false,\n            \"opArgs\": \"{\\\"assumeRole\\\":false,\\\"auto_discovery\\\":true,\\\"auto_remediation\\\":false,\\\"auto_scan\\\":false,\\\"discoveryCredsVersion\\\":\\\"2.2\\\",\\\"enable_acm\\\":false,\\\"enable_asset_discovery_email\\\":false,\\\"enable_flowlogs\\\":false,\\\"region\\\":\\\"us-west-1\\\",\\\"rw_permissions\\\":null,\\\"rw_roles\\\":null,\\\"scan_permissions\\\":null,\\\"scan_roles\\\":null}\",\n            \"cloudParams\": \"xxxx\",\n            \"outputParams\": \"\",\n            \"state\": \"\",\n            \"status\": \"PENDING\",\n            \"version\": \"\",\n            \"is_frictionless\": false,\n            \"createdAt\": \"2025-03-24T06:59:41.694Z\",\n            \"updatedAt\": \"2025-03-24T06:59:41.694Z\",\n            \"iaasActConnMapping\": null\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Prepare CloudFormation template",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"aws-dhw672\",\"settings\":{\"initAutoAssetDiscovery\":true,\"enableDiskScan\":true,\"initPostureScan\":true,\"autoRemediate\":false,\"enableDataSecurityPosture\":true,\"enableAccessIntel\":true,\"enableClassificationInfo\":false,\"enableScc\":false},\"owner\":\"john.doe@securiti.ai\",\"scan_location\":\"securiti_cloud\",\"cloud_type\":\"aws\",\"cloud_regions\":[\"us-west-1\"],\"download\":true,\"cloud_config\":{\"master_account_id\":\"xxxx\",\"template\":\"add-cloud\",\"scope\":\"PROJECT\",\"enable_pod_deployment\":true,\"aws_sts_external_id\":\"xxxx\",\"aws_execution_id\":\"xxxx\"}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/prepare_template",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "frictionless",
+                "prepare_template"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Prepare CloudFormation template",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"aws-dhw672\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"enableDiskScan\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": false,\n        \"enableDataSecurityPosture\": true,\n        \"enableAccessIntel\": true,\n        \"enableClassificationInfo\": false,\n        \"enableScc\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"scan_location\": \"securiti_cloud\",\n    \"cloud_type\": \"aws\",\n    \"cloud_regions\": [\n        \"us-west-1\"\n    ],\n    \"download\": true,\n    \"cloud_config\": {\n        \"master_account_id\": \"xxxx\",\n        \"template\": \"add-cloud\",\n        \"scope\": \"PROJECT\",\n        \"enable_pod_deployment\": true,\n        \"aws_sts_external_id\": \"xxxx\",\n        \"aws_execution_id\": \"xxxx\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/prepare_template",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "frictionless",
+                    "prepare_template"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Mar 2025 06:05:47 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24952"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742364750"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Template Prepared Successfully!\",\n    \"data\": {\n        \"name\": \"aws-xxxx\",\n        \"presigned_url\": \"https://xxxx.amazonaws.com/app/privaci/xxxx/xds/cf_download/03-19-2025/aws-account-onboarding-cf-xxxx.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=xxxx&X-Amz-Date=20250319T060547Z&X-Amz-Expires=604800&X-Amz-Security-Token=xxxx&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=xxxx\",\n        \"downloadable_url\": \"https://xxxx.s3.us-west-2.amazonaws.com/app/privaci/xxxx/xds/cf_download/03-19-2025/aws-account-onboarding-cf-xxxx.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=xxxx&X-Amz-Date=20250319T060547Z&X-Amz-Expires=604800&X-Amz-Security-Token=xxxx&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=xxxx\",\n        \"cloud_params\": {\n            \"DataScan\": \"Enable\",\n            \"DiskScan\": \"Enable\",\n            \"ExecutionId\": \"xxxx\",\n            \"KubernetesPostureScan\": \"Disable\",\n            \"MasterRole\": \"Enable\",\n            \"PostureRemediation\": \"Disable\",\n            \"PostureScan\": \"Enable\",\n            \"PostureScanAutoRemediationPerms\": \"\",\n            \"SecuritiAWSAccountId\": \"xxxx\",\n            \"SecuritiAssetScanRole\": \"EKSNODE\",\n            \"SecuritiDataScanAccountId\": \"xxxx\",\n            \"SecuritiDataScanExternalId\": \"\",\n            \"SecuritiDataScanIAMRole\": \"SECURITI_POD_ROLE\",\n            \"SecuritiMasterAccountId\": \"xxxx\",\n            \"StsExternalId\": \"xxxx\",\n            \"stackName\": \"securiti-aws-sbxc3n-master-xxxx\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create an AWS instance",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"aws-32d34fr\",\"settings\":{\"initAutoAssetDiscovery\":true,\"enableDiskScan\":true,\"initPostureScan\":true,\"autoRemediate\":false,\"enableDataSecurityPosture\":true,\"enableAccessIntel\":true,\"enableClassificationInfo\":false,\"enableScc\":false},\"owner\":\"john.doe@securiti.ai\",\"scan_location\":\"securiti_cloud\",\"cloud_type\":\"aws\",\"cloud_regions\":[\"us-west-1\"],\"download\":true,\"cloud_config\":{\"master_account_id\":\"xxxx\",\"template\":\"add-cloud\",\"scope\":\"PROJECT\",\"enable_pod_deployment\":true,\"aws_execution_id\":\"xxxx\",\"aws_sts_external_id\":\"xxxx\",\"assumeRole\":true,\"run_discovery\":false},\"cloud_params\":{\"DataScan\":\"Enable\",\"DiskScan\":\"Enable\",\"ExecutionId\":\"xxxx\",\"MasterRole\":\"Enable\",\"PostureRemediation\":\"Disable\",\"PostureScan\":\"Enable\",\"SecuritiAWSAccountId\":\"xxxx\",\"SecuritiAssetScanRole\":\"EKSNODE\",\"SecuritiDataScanAccountId\":\"xxxx\",\"SecuritiDataScanIAMRole\":\"SECURITI_POD_ROLE\",\"SecuritiMasterAccountId\":\"xxxx\",\"StsExternalId\":\"xxxx\",\"stackName\":\"securiti-aws-e2783eh-master-xxxx\"}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/auth_setup",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "frictionless",
+                "auth_setup"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Create an AWS instance",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"aws-5467382\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"enableDiskScan\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": false,\n        \"enableDataSecurityPosture\": true,\n        \"enableAccessIntel\": true,\n        \"enableClassificationInfo\": false,\n        \"enableScc\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"scan_location\": \"securiti_cloud\",\n    \"cloud_type\": \"aws\",\n    \"cloud_regions\": [\n        \"us-west-1\"\n    ],\n    \"download\": true,\n    \"cloud_config\": {\n        \"master_account_id\": \"xxxx\",\n        \"template\": \"add-cloud\",\n        \"scope\": \"PROJECT\",\n        \"enable_pod_deployment\": true,\n        \"aws_execution_id\": \"xxxx\",\n        \"aws_sts_external_id\": \"xxxx\",\n        \"assumeRole\": true,\n        \"run_discovery\": false\n    },\n    \"cloud_params\": {\n        \"DataScan\": \"Enable\",\n        \"DiskScan\": \"Enable\",\n        \"ExecutionId\": \"xxxx\",\n   \"MasterRole\": \"Enable\",\n        \"PostureRemediation\": \"Disable\",\n        \"PostureScan\": \"Enable\",\n        \"SecuritiAWSAccountId\": \"xxxx\",\n        \"SecuritiAssetScanRole\": \"EKSNODE\",\n        \"SecuritiDataScanAccountId\": \"xxxx\",\n        \"SecuritiDataScanIAMRole\": \"SECURITI_POD_ROLE\",\n        \"SecuritiMasterAccountId\": \"xxxx\",\n        \"StsExternalId\": \"xxxx\",\n        \"stackName\": \"securiti-aws-5wwjzd-master-xxxx\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/auth_setup",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "frictionless",
+                    "auth_setup"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Mar 2025 07:24:20 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24970"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742369594"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Addition of cloud account started successfully!\",\n    \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create AWS instance via Legacy flow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"aws-i9pz4v\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"initPostureScan\": false,\n        \"autoRemediate\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"cloud_type\": \"aws\",\n    \"cloud_region\": \"us-west-1\",\n    \"cloud_config\": {\n        \"assumeRole\": false\n    },\n    \"download\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/auth_setup",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "auth_setup"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Create AWS instance via Legacy flow",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"aws-i9pz4v\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"initPostureScan\": false,\n        \"autoRemediate\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"cloud_type\": \"aws\",\n    \"cloud_region\": \"us-west-1\",\n    \"cloud_config\": {\n        \"assumeRole\": false\n    },\n    \"download\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/auth_setup",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "auth_setup"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 24 Mar 2025 06:59:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24785"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742799703"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Addition of cloud account started successfully!\",\n    \"data\": {\n        \"name\": \"aws-i9pz4v\",\n        \"securiti_api_token\": \"xxxx\",\n        \"callback_id\": \"xxxx\",\n        \"presigned_url\": \"https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/create/review?param_CallbackId=xxxx&param_ConnectorId=0x63111271014b0&param_ExecutionId=xxxx&param_SecuritiAWSAccountId=xxxx&param_SecuritiAWSAccountUserName=root&param_SecuritiEndpoint=https%3A%2F%2Fapp.securiti.ai&param_SecuritiToken=xxxx&param_StsExternalId=xxxx&stackName=securiti-xxxx-stack-xxxx&templateURL=https%3A%2F%2Fxxxx.s3.us-west-2.amazonaws.com%2Fapp%2Fxds%2Fsecuriti-templates%2Fv1.0.23%2Ftemplate-3-3.yaml%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3Dxxxx%26X-Amz-Date%3D20250324T065941Z%26X-Amz-Expires%3D604800%26X-Amz-Security-Token%3Dxxxx%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject%26X-Amz-Signature%3Dxxxx\",\n        \"connector_id\": \"0x63111271014b0\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Azure",
+      "item": [
+        {
+          "name": "Fetches metadata of Azure IaaS Connectors",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/v1/admin/asset_sync/connector_meta/azure",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "v1",
+                "admin",
+                "asset_sync",
+                "connector_meta",
+                "azure"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200]Fetches metadata of Azure IaaS Connectors",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/azure",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "asset_sync",
+                    "connector_meta",
+                    "azure"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Mar 2025 07:46:50 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "50000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "49985"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742371162"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"id\": \"azure\",\n            \"name\": \"Azure\",\n            \"auth_type\": \"config\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Azure\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\": [{\\\"break\\\": true}, {\\\"renderComponent\\\": \\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GCP",
+      "item": [
+        {
+          "name": "Fetches metadata of GCP IaaS connector",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/gcp",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "asset_sync",
+                "connector_meta",
+                "gcp"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200]Fetches metadata of GCP IaaS connector",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/gcp",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "asset_sync",
+                    "connector_meta",
+                    "gcp"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 14 Mar 2025 09:41:24 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "50000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "49997"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741946090"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"id\": \"gcp\",\n            \"name\": \"Google Cloud Platform\",\n            \"auth_type\": \"credentials_file\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Google Cloud Platform\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\": [{\\\"break\\\": true}, {\\\"renderComponent\\\": \\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"credentials_json\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch meta details of GCP IaaS connector by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "iaas_connector",
+                "id"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200]Fetch meta details of GCP IaaS connector by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/0x630af3090b124",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "iaas_connector",
+                    "0x630af3090b124"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Mar 2025 10:29:58 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24980"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742380900"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Iaas Connectors fetched successfully\",\n    \"data\": {\n        \"queryXdsIaasConnector\": {\n            \"id\": 44,\n            \"connId\": \"0x630af3090b124\",\n            \"name\": \"google-cloud\",\n            \"tenantId\": \"xxxx\",\n            \"ownerId\": 1,\n            \"provider\": \"GCP\",\n            \"orgId\": \"\",\n            \"orgUnit\": 1,\n            \"download\": true,\n            \"opArgs\": \"{\\\"acm_permissions\\\":[],\\\"acm_roles\\\":[],\\\"auto_discovery\\\":true,\\\"auto_remediation\\\":true,\\\"auto_scan\\\":true,\\\"config_scc_creds\\\":false,\\\"connector_id\\\":\\\"0x630af3090b124\\\",\\\"discoveryCredsVersion\\\":\\\"2.2\\\",\\\"enable_acm\\\":false,\\\"enable_asset_discovery_email\\\":false,\\\"enable_flowlogs\\\":false,\\\"enable_scc\\\":true,\\\"org_id\\\":\\\"\\\",\\\"region\\\":\\\"us-central1\\\",\\\"rw_permissions\\\":[\\\"redis.instances.update\\\",\\\"redis.instances.updateAuth\\\",\\\"container.apiServices.update\\\",\\\"container.clusters.update\\\",\\\"storage.buckets.update\\\",\\\"storage.buckets.setIamPolicy\\\",\\\"compute.instances.get\\\",\\\"compute.instances.setMetadata\\\",\\\"compute.instances.setDeletionProtection\\\",\\\"compute.instances.setScheduling\\\",\\\"bigquery.datasets.get\\\",\\\"bigquery.datasets.update\\\",\\\"compute.instances.setDiskAutoDelete\\\",\\\"compute.disks.update\\\",\\\"storage.buckets.get\\\",\\\"cloudsql.instances.get\\\",\\\"cloudsql.instances.update\\\",\\\"cloudsql.sslCerts.create\\\",\\\"compute.subnetworks.get\\\",\\\"compute.subnetworks.setPrivateIpGoogleAccess\\\",\\\"compute.subnetworks.update\\\"],\\\"rw_roles\\\":[],\\\"scan_permissions\\\":[\\\"storage.buckets.list\\\",\\\"storage.objects.get\\\",\\\"storage.objects.list\\\"],\\\"scan_roles\\\":[\\\"roles/viewer\\\",\\\"roles/bigquery.dataViewer\\\",\\\"roles/bigquery.jobUser\\\",\\\"roles/bigquery.readSessionUser\\\"],\\\"scc_org_id\\\":\\\"\\\",\\\"scc_permissions\\\":[],\\\"scc_roles\\\":[\\\"roles/securitycenter.sourcesEditor\\\",\\\"roles/securitycenter.findingsEditor\\\"]}\",\n            \"cloudParams\": \"xxxx\",\n            \"outputParams\": \"\",\n            \"state\": \"\",\n            \"status\": \"DOWNLOAD_COMPLETE\",\n            \"version\": \"\",\n            \"is_frictionless\": false,\n            \"createdAt\": \"2025-03-19T10:07:36.978Z\",\n            \"updatedAt\": \"2025-03-19T10:07:36.978Z\",\n            \"iaasActConnMapping\": null\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Prepare Terraform Template",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"gcp-7qsnym\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"enableDiskScan\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": false,\n        \"enableDataSecurityPosture\": false,\n        \"enableClassificationInfo\": false,\n        \"enableScc\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"scan_location\": \"securiti_cloud\",\n    \"cloud_type\": \"gcp\",\n    \"cloud_regions\": [\n        \"us-west1\"\n    ],\n    \"download\": true,\n    \"cloud_config\": {\n        \"template\": \"add-cloud\",\n        \"scope\": \"PROJECT\",\n        \"enable_pod_deployment\": true,\n        \"gcp_execution_id\": \"xxxx\",\n        \"project_list\": [\n            \"xxxx\"\n        ]\n    },\n    \"cloud_params\": {\n        \"ExecutionId\": \"xxxx\",\n        \"GcpDataScanPodIamEmail\": \"john.doe@securiti.ai\",\n        \"GcpServiceAccountJson\": \"{\\\"enableDataSecurityPosture\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"enableDiskScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initAutoAssetDiscovery\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initPostureScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"}}\",\n        \"SecuritiDataScanProjectId\": \"xxxx\",\n        \"SecuritiDataScanProjectNumber\": \"xxxx\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/prepare_template",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "frictionless",
+                "prepare_template"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Prepare Terraform Template",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"gcp-7qsnbn\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"enableDiskScan\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": false,\n        \"enableDataSecurityPosture\": false,\n        \"enableClassificationInfo\": false,\n        \"enableScc\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"scan_location\": \"securiti_cloud\",\n    \"cloud_type\": \"gcp\",\n    \"cloud_regions\": [\n        \"us-west1\"\n    ],\n    \"download\": true,\n    \"cloud_config\": {\n        \"template\": \"add-cloud\",\n        \"scope\": \"PROJECT\",\n        \"enable_pod_deployment\": true,\n        \"gcp_execution_id\": \"xxxx\",\n        \"project_list\": [\n            \"xxxx\"\n        ]\n    },\n    \"cloud_params\": {\n        \"ExecutionId\": \"xxxx\",\n        \"GcpDataScanPodIamEmail\": \"john.doe@securiti.ai\",\n        \"GcpServiceAccountJson\": \"{\\\"enableDataSecurityPosture\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"enableDiskScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initAutoAssetDiscovery\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initPostureScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"}}\",\n        \"SecuritiDataScanProjectId\": \"xxxx\",\n        \"SecuritiDataScanProjectNumber\": \"xxxx\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/prepare_template",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "frictionless",
+                    "prepare_template"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 13 Mar 2025 05:53:07 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24953"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741845827"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Template Prepared Successfully!\",\n    \"data\": {\n        \"name\": \"gcp-7qsnym\",\n        \"presigned_url\": \"https://xxxx.amazonaws.com/app/privaci/xxxx/xds/tf_download/GCP-auth-20250313T055307.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=xxxx&X-Amz-Date=20250313T055307Z&X-Amz-Expires=604800&X-Amz-Security-Token=xxxx&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=xxxx\",\n        \"downloadable_url\": \"https://xxxx.s3.us-west-2.amazonaws.com/app/privaci/xxxx/xds/tf_download/GCP-permission-20250313T055307.tfvars?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=xxxx&X-Amz-Date=20250313T055307Z&X-Amz-Expires=604800&X-Amz-Security-Token=xxxx&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=xxxx\",\n        \"cloud_params\": {\n            \"ExecutionId\": \"xxxx\",\n            \"GcpDataScanPodIamEmail\": \"john.doe@securiti.ai\",\n            \"GcpServiceAccountJson\": \"{\\\"enableDiskScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initAutoAssetDiscovery\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initPostureScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"}}\",\n            \"SecuritiDataScanProjectId\": \"xxxx\",\n            \"SecuritiDataScanProjectNumber\": \"xxxx\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create a GCP instance",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"gcp-7qsngb\",\"settings\":{\"initAutoAssetDiscovery\":true,\"enableDiskScan\":true,\"initPostureScan\":true,\"autoRemediate\":false,\"enableDataSecurityPosture\":false,\"enableClassificationInfo\":false,\"enableScc\":false},\"owner\":\"john.doe@securiti.ai\",\"scan_location\":\"securiti_cloud\",\"cloud_type\":\"gcp\",\"cloud_regions\":[\"us-west1\"],\"download\":true,\"cloud_config\":{\"template\":\"add-cloud\",\"scope\":\"PROJECT\",\"enable_pod_deployment\":true,\"gcp_execution_id\":\"xxxx\",\"project_list\":[\"xxxx\"],\"assumeRole\":true,\"run_discovery\":false},\"cloud_params\":{\"ExecutionId\":\"xxxx\",\"GcpDataScanPodIamEmail\":\"john.doe@securiti.ai\",\"GcpServiceAccountJson\":\"{\\\"enableDiskScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initAutoAssetDiscovery\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initPostureScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"}}\",\"SecuritiDataScanProjectId\":\"xxxx\",\"SecuritiDataScanProjectNumber\":\"xxxx\"}}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/auth_setup",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "frictionless",
+                "auth_setup"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Create a GCP instance",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"gcp-7qsngm\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"enableDiskScan\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": false,\n        \"enableDataSecurityPosture\": false,\n        \"enableClassificationInfo\": false,\n        \"enableScc\": false\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"scan_location\": \"securiti_cloud\",\n    \"cloud_type\": \"gcp\",\n    \"cloud_regions\": [\n        \"us-west1\"\n    ],\n    \"download\": true,\n    \"cloud_config\": {\n        \"template\": \"add-cloud\",\n        \"scope\": \"PROJECT\",\n        \"enable_pod_deployment\": true,\n        \"gcp_execution_id\": \"xxxx\",\n        \"project_list\": [\n            \"xxxx\"\n        ],\n        \"assumeRole\": true,\n        \"run_discovery\": false\n    },\n    \"cloud_params\": {\n        \"ExecutionId\": \"xxxx\",\n        \"GcpDataScanPodIamEmail\": \"john.doe@securiti.ai\",\n        \"GcpServiceAccountJson\": \"{\\\"enableDiskScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initAutoAssetDiscovery\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"},\\\"initPostureScan\\\":{\\\"Name\\\":\\\"projects/xxxx/serviceAccounts/john.doe@securiti.ai\\\",\\\"Email\\\":\\\"john.doe@securiti.ai\\\",\\\"AuthType\\\":\\\"sa_key_json\\\"}}\",\n        \"SecuritiDataScanProjectId\": \"xxxx\",\n        \"SecuritiDataScanProjectNumber\": \"xxxx\"\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/frictionless/auth_setup",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "frictionless",
+                    "auth_setup"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 13 Mar 2025 06:01:02 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24938"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741845827"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Addition of cloud account started successfully!\",\n    \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create GCP instance via Legacy flow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"abc-a7b3qr\",\n    \"owner\": \"john.doe@securiti.ai\",\n    \"cloud_type\": \"gcp\",\n    \"download\": true,\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": true,\n        \"enableScc\": true,\n        \"enableAccessIntel\": false\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/auth_setup",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "auth_setup"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Create GCP instance via Legacy flow",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"abc-a7b3qr\",\n    \"owner\": \"john.doe@securiti.ai\",\n    \"cloud_type\": \"gcp\",\n    \"download\": true,\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"initPostureScan\": true,\n        \"autoRemediate\": true,\n        \"enableScc\": true,\n        \"enableAccessIntel\": false\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/auth_setup",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "auth_setup"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Mar 2025 09:52:00 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24927"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742378321"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Addition of cloud account started successfully!\",\n    \"data\": {\n        \"name\": \"google-l2ylyz\",\n        \"securiti_api_token\": \"xxxx\",\n        \"callback_id\": \"xxxx\",\n        \"presigned_url\": \"https://xxxx.s3.us-west-2.amazonaws.com/app/privaci/xxxx/xds/tf_download/GCP-auth-20250319T095200.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=xxxx&X-Amz-Date=20250319T095200Z&X-Amz-Expires=604800&X-Amz-Security-Token=xxxx&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=xxxx\",\n        \"connector_id\": \"0x630aefc3aa4e3\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OCI",
+      "item": [
+        {
+          "name": "Fetches metadata of OCI IaaS connector",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/oci",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "asset_sync",
+                "connector_meta",
+                "oci"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200]Fetches metadata of OCI IaaS connector",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/asset_sync/connector_meta/oci",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "asset_sync",
+                    "connector_meta",
+                    "oci"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 14 Mar 2025 09:41:58 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "50000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "49996"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1741946090"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"id\": \"oci\",\n            \"name\": \"Oracle Cloud Infrastructure\",\n            \"auth_type\": \"config\",\n            \"auth_endpoint\": \"\",\n            \"redirect_url\": \"\",\n            \"token_endpoint\": \"\",\n            \"revoke_endpoint\": \"\\\"\\\"\",\n            \"display_name\": \"Oracle Cloud Infrastructure\",\n            \"grant_type\": \"\",\n            \"const_query_params\": \"\",\n            \"base_urls\": \"{}\",\n            \"params\": \"{\\\"fields\\\": [{\\\"break\\\": true}, {\\\"renderComponent\\\": \\\"Scheduler\\\"}]}\",\n            \"default_scan_policy\": \"{\\\"filters\\\": {}, \\\"auto_scan\\\": true, \\\"frequency\\\": \\\"1h\\\", \\\"disable_to\\\": \\\"\\\", \\\"disable_from\\\": \\\"\\\"}\",\n            \"encrypt_fields\": \"\",\n            \"system_type\": \"IaaS\",\n            \"show_on_ui\": true,\n            \"iam_feature_flag_name\": \"\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Fetch meta details of OCI IaaS connector by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "iaas_connector",
+                "id"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Fetch meta details of OCI IaaS connector by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/iaas_connector/id",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "iaas_connector",
+                    "id"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 24 Mar 2025 08:57:09 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24924"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742806924"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Iaas Connectors fetched successfully\",\n    \"data\": {\n        \"queryXdsIaasConnector\": {\n            \"id\": 44,\n            \"connId\": \"0x63112b3801299\",\n            \"name\": \"oracle-cloud\",\n            \"tenantId\": \"xxxx\",\n            \"ownerId\": 44,\n            \"provider\": \"OCI\",\n            \"orgId\": \"\",\n            \"orgUnit\": 1,\n            \"download\": false,\n            \"opArgs\": \"{\\\"auto_discovery\\\":true,\\\"auto_remediation\\\":false}\",\n            \"cloudParams\": \"xxxx\",\n            \"outputParams\": \"\",\n            \"state\": \"\",\n            \"status\": \"PENDING\",\n            \"version\": \"\",\n            \"is_frictionless\": false,\n            \"createdAt\": \"2025-03-24T08:50:31.464Z\",\n            \"updatedAt\": \"2025-03-24T08:50:31.464Z\",\n            \"iaasActConnMapping\": null\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create an OCI instance",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"oracle-0l1i91\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"initPostureScan\": true\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"cloud_type\": \"oci\",\n    \"cloud_config\": {},\n    \"download\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/xpod/auth_setup",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "xpod",
+                "auth_setup"
+              ]
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "name": "[200] Create an OCI instance",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"oracle-0l1i91\",\n    \"settings\": {\n        \"initAutoAssetDiscovery\": true,\n        \"initPostureScan\": true\n    },\n    \"owner\": \"john.doe@securiti.ai\",\n    \"cloud_type\": \"oci\",\n    \"cloud_config\": {},\n    \"download\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/admin/xpod/auth_setup",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "admin",
+                    "xpod",
+                    "auth_setup"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 24 Mar 2025 08:50:31 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24952"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1742806924"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"Addition of cloud account started successfully!\",\n    \"data\": {\n        \"name\": \"oracle-0l1i91\",\n        \"securiti_api_token\": \"xxxx\",\n        \"callback_id\": \"xxxx\",\n        \"presigned_url\": \"https://objectstorage.us-phoenix-1.oraclecloud.com/p/xxxx/n/xxxx/b/xxxx/o/oci-create-svc-acct-v0.0.2.zip\",\n        \"connector_id\": \"0x63112b3801300\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "host-url",
+      "value": "https://app.securiti.ai",
+      "type": "string"
+    },
+    {
+      "key": "X-API-KEY",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "X-API-SECRET",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "X-TIDENT",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

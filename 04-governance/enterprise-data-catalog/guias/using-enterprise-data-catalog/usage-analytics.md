@@ -6,7 +6,7 @@ published: 2026-07-19T19:36:08Z
 canonical: "helpcenter.securiti.ai/usage-analytics"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

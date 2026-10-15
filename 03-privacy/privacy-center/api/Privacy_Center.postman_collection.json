@@ -1,0 +1,960 @@
+{
+	"info": {
+		"_postman_id": "00000000-0000-0000-0000-000000000000",
+		"name": "Privacy Center",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "00000000"
+	},
+	"item": [
+		{
+			"name": "General",
+			"item": [
+				{
+					"name": "Fetch cookie script deployment status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "{{X-API-KEY}}",
+								"type": "text"
+							},
+							{
+								"key": "X-API-SECRET",
+								"value": "{{X-API-SECRET}}",
+								"type": "text"
+							},
+							{
+								"key": "X-TIDENT",
+								"value": "{{X-TIDENT}}",
+								"type": "text"
+							},
+							{
+								"key": "X-ORG-ID",
+								"value": "{{X-ORG-ID}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{host-url}}/privaci/v1/admin/privacy_center/deployment_status/:privacyCenterID",
+							"host": [
+								"{{host-url}}"
+							],
+							"path": [
+								"privaci",
+								"v1",
+								"admin",
+								"privacy_center",
+								"deployment_status",
+								":privacyCenterID"
+							],
+							"variable": [
+								{
+									"key": "privacyCenterID",
+									"value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Fetch cookie script deployment status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{X-API-KEY}}",
+										"type": "text"
+									},
+									{
+										"key": "X-API-SECRET",
+										"value": "{{X-API-SECRET}}",
+										"type": "text"
+									},
+									{
+										"key": "X-TIDENT",
+										"value": "{{X-TIDENT}}",
+										"type": "text"
+									},
+									{
+										"key": "X-ORG-ID",
+										"value": "{{X-ORG-ID}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{host-url}}/privaci/v1/admin/privacy_center/deployment_status/:privacyCenterID",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"privaci",
+										"v1",
+										"admin",
+										"privacy_center",
+										"deployment_status",
+										":privacyCenterID"
+									],
+									"variable": [
+										{
+											"key": "privacyCenterID",
+											"value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 22 Oct 2024 07:33:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24840"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1729582779"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"Successfully fetched cookie script deployment status\",\n    \"data\": {\n        \"deployment_status\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Organizations APIs",
+			"item": [
+				{
+					"name": "Fetch org units",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "{{X-API-KEY}}",
+								"type": "text"
+							},
+							{
+								"key": "X-API-SECRET",
+								"value": "{{X-API-SECRET}}",
+								"type": "text"
+							},
+							{
+								"key": "X-TIDENT",
+								"value": "{{X-TIDENT}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host-url}}/core/v1/admin/org_units?limit=20&p=1&sort=name",
+							"host": [
+								"{{host-url}}"
+							],
+							"path": [
+								"core",
+								"v1",
+								"admin",
+								"org_units"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "name"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Fetch org units",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{X-API-KEY}}",
+										"type": "text"
+									},
+									{
+										"key": "X-API-SECRET",
+										"value": "{{X-API-SECRET}}",
+										"type": "text"
+									},
+									{
+										"key": "X-TIDENT",
+										"value": "{{X-TIDENT}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host-url}}/core/v1/admin/org_units?limit=20&p=1&sort=name",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"core",
+										"v1",
+										"admin",
+										"org_units"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "p",
+											"value": "1"
+										},
+										{
+											"key": "sort",
+											"value": "name"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 30 Sep 2022 06:09:11 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24999"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1664519051"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"created_at\": 1661497096607,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 1 Desc\",\n            \"id\": 34,\n            \"modified_at\": 1661497096607,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 1\",\n            \"number_of_users\": 40\n        },\n        {\n            \"created_at\": 1661845313063,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 2 Desc\",\n            \"id\": 67,\n            \"modified_at\": 1661845313063,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 2\",\n            \"number_of_users\": 38\n        },\n        {\n            \"created_at\": 1661845333468,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 3 Desc\",\n            \"id\": 68,\n            \"modified_at\": 1661845333468,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 3\",\n            \"number_of_users\": 36\n        },\n        {\n            \"created_at\": 1661845371731,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 4 Desc\",\n            \"id\": 69,\n            \"modified_at\": 1661845371731,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 4\",\n            \"number_of_users\": 37\n        },\n        {\n            \"created_at\": 1661306342879,\n            \"created_by\": 123,\n            \"description\": \"\",\n            \"id\": 1,\n            \"modified_at\": 1661306342879,\n            \"modified_by\": 0,\n            \"name\": \"Default Organization\",\n            \"number_of_users\": 57\n        },\n        {\n            \"created_at\": 1663836735337,\n            \"created_by\": 123,\n            \"description\": \"\",\n            \"id\": 102,\n            \"modified_at\": 1663836735337,\n            \"modified_by\": 1289,\n            \"name\": \"New_Org\",\n            \"number_of_users\": 36\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Switch default org",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "{{X-API-KEY}}",
+								"type": "text"
+							},
+							{
+								"key": "X-API-SECRET",
+								"value": "{{X-API-SECRET}}",
+								"type": "text"
+							},
+							{
+								"key": "X-TIDENT",
+								"value": "{{X-TIDENT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 1234,\n    \"org_unit\": 123\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host-url}}/core/v1/admin/org_units/set_default_org_unit",
+							"host": [
+								"{{host-url}}"
+							],
+							"path": [
+								"core",
+								"v1",
+								"admin",
+								"org_units",
+								"set_default_org_unit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Switch default org",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-API-KEY",
+										"value": "{{X-API-KEY}}",
+										"type": "text"
+									},
+									{
+										"key": "X-API-SECRET",
+										"value": "{{X-API-SECRET}}",
+										"type": "text"
+									},
+									{
+										"key": "X-TIDENT",
+										"value": "{{X-TIDENT}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user_id\": 1234,\n    \"org_unit\": 123\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host-url}}/core/v1/admin/org_units/set_default_org_unit",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"core",
+										"v1",
+										"admin",
+										"org_units",
+										"set_default_org_unit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 18 Oct 2022 06:23:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24940"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1666074895"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"Successfully completed request\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch org units for a user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host-url}}/core/v1/admin/org_units/user/:userID",
+							"host": [
+								"{{host-url}}"
+							],
+							"path": [
+								"core",
+								"v1",
+								"admin",
+								"org_units",
+								"user",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "userID",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Fetch org units for a user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host-url}}/core/v1/admin/org_units/user/34",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"core",
+										"v1",
+										"admin",
+										"org_units",
+										"user",
+										"34"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 22 Sep 2022 11:20:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24937"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1663845701"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"Successfully completed request\",\n    \"data\": [\n        {\n            \"created_at\": 1661306342879,\n            \"created_by\": 0,\n            \"description\": \"\",\n            \"id\": 1,\n            \"is_active\": true,\n            \"modified_at\": 1661306342879,\n            \"modified_by\": 0,\n            \"name\": \"Default Organization\",\n            \"tenant_id\": \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n        },\n        {\n            \"created_at\": 1661497096607,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 1 Desc\",\n            \"id\": 34,\n            \"modified_at\": 1661497096607,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 1\",\n            \"tenant_id\": \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n        },\n        {\n            \"created_at\": 1661845313063,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 2 Desc\",\n            \"id\": 67,\n            \"modified_at\": 1661845313063,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 2\",\n            \"tenant_id\": \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n        },\n        {\n            \"created_at\": 1661845333468,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 3 Desc\",\n            \"id\": 68,\n            \"modified_at\": 1661845333468,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 3\",\n            \"tenant_id\": \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n        },\n        {\n            \"created_at\": 1661845371731,\n            \"created_by\": 123,\n            \"description\": \"AQ Org 4 Desc\",\n            \"id\": 69,\n            \"modified_at\": 1661845371731,\n            \"modified_by\": 166,\n            \"name\": \"AQ Org 4\",\n            \"tenant_id\": \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n        },\n        {\n            \"created_at\": 1663836735337,\n            \"created_by\": 123,\n            \"description\": \"\",\n            \"id\": 102,\n            \"modified_at\": 1663836735337,\n            \"modified_by\": 1289,\n            \"name\": \"New_Org\",\n            \"tenant_id\": \"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Add an organization",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"AQ org 1\",\n    \"description\": \"Testing\"\n}"
+						},
+						"url": {
+							"raw": "{{host-url}}/core/v1/admin/org_units",
+							"host": [
+								"{{host-url}}"
+							],
+							"path": [
+								"core",
+								"v1",
+								"admin",
+								"org_units"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Add an organization",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"AQ org 1\",\n    \"description\": \"Testing\"\n}"
+								},
+								"url": {
+									"raw": "{{host-url}}/core/v1/admin/org_units",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"core",
+										"v1",
+										"admin",
+										"org_units"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 30 Sep 2022 08:06:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24942"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1664525418"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"Create request completed successfully\",\n    \"data\": {\n        \"created_by\": 123,\n        \"modified_by\": 2905,\n        \"created_at\": 1664525153850,\n        \"modified_at\": 1664525153850,\n        \"tenant_id\": \"00000000-0000-0000-0000-000000000000\",\n        \"id\": 106,\n        \"name\": \"AQ org 1\",\n        \"description\": \"Testing\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Import organization as CSV file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uploadFile",
+									"type": "file",
+									"src": "<path-to-file>/Organization.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://app.securiti.ai/core/v1/admin/org_units/import",
+							"protocol": "https",
+							"host": [
+								"app",
+								"securiti",
+								"ai"
+							],
+							"path": [
+								"core",
+								"v1",
+								"admin",
+								"org_units",
+								"import"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Import organization as CSV file",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "uploadFile",
+											"type": "file",
+											"src": "<path-to-file>/Organization.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host-url}}/core/v1/admin/org_units/import",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"core",
+										"v1",
+										"admin",
+										"org_units",
+										"import"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 30 Sep 2022 08:16:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24992"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1664526395"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"Successfully completed request\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit an organization",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"AQ org\",\n    \"description\": \"test\"\n}"
+						},
+						"url": {
+							"raw": "{{host-url}}/core/v1/admin/org_units/:orgID",
+							"host": [
+								"{{host-url}}"
+							],
+							"path": [
+								"core",
+								"v1",
+								"admin",
+								"org_units",
+								":orgID"
+							],
+							"variable": [
+								{
+									"key": "orgID",
+									"value": "104"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[200] Edit an organization",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"AQ org\",\n    \"description\": \"test\"\n}"
+								},
+								"url": {
+									"raw": "{{host-url}}/core/v1/admin/org_units/:orgID",
+									"host": [
+										"{{host-url}}"
+									],
+									"path": [
+										"core",
+										"v1",
+										"admin",
+										"org_units",
+										":orgID"
+									],
+									"variable": [
+										{
+											"key": "orgID",
+											"value": "104"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 30 Sep 2022 08:08:37 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=315360000"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Limit",
+									"value": "25000"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "24937"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1664525418"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 0,\n    \"message\": \"Update successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Updated response for script",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.securiti.ai/privaci/v1/admin/privacy_center/deployment_status/:privacycenterID",
+					"protocol": "https",
+					"host": [
+						"app",
+						"securiti",
+						"ai"
+					],
+					"path": [
+						"privaci",
+						"v1",
+						"admin",
+						"privacy_center",
+						"deployment_status",
+						":privacycenterID"
+					],
+					"variable": [
+						{
+							"key": "privacycenterID",
+							"value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "X-API-KEY",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "X-API-SECRET",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "X-TIDENT",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "host-url",
+			"value": "https://app.securiti.ai",
+			"type": "string"
+		}
+	]
+}

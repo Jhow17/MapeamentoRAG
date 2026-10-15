@@ -6,7 +6,7 @@ published: 2026-07-18T10:31:07Z
 canonical: "helpcenter.securiti.ai/dqtemplates"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

@@ -5,7 +5,7 @@ updated: 2026-01-08T07:15:20Z
 published: 2026-01-08T07:15:20Z
 canonical: "helpcenter.securiti.ai/audit-logs-for-enterprise-data-catalog"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

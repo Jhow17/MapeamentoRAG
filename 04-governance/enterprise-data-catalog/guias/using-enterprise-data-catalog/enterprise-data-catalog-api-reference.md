@@ -7,7 +7,7 @@ published: 2026-08-06T11:39:46Z
 canonical: "helpcenter.securiti.ai/enterprise-data-catalog-api-reference"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

@@ -5,7 +5,7 @@ updated: 2026-09-24T08:58:41Z
 published: 2026-09-24T08:58:41Z
 canonical: "helpcenter.securiti.ai/edc-ingestion"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

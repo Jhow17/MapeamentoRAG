@@ -5,7 +5,7 @@ updated: 2025-12-12T11:57:42Z
 published: 2025-12-12T11:57:42Z
 canonical: "helpcenter.securiti.ai/ml-models"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

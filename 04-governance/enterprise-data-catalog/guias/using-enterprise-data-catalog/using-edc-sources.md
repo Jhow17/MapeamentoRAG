@@ -5,7 +5,7 @@ updated: 2026-09-17T20:07:30Z
 published: 2026-09-21T21:00:02Z
 canonical: "helpcenter.securiti.ai/using-edc-sources"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

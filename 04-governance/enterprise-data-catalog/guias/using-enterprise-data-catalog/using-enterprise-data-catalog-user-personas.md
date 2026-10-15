@@ -6,7 +6,7 @@ published: 2026-07-21T03:06:02Z
 canonical: "helpcenter.securiti.ai/using-enterprise-data-catalog-user-personas"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

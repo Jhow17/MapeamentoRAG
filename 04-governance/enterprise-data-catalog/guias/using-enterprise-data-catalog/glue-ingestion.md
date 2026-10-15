@@ -5,7 +5,7 @@ updated: 2026-09-21T09:00:49Z
 published: 2026-09-21T21:00:02Z
 canonical: "helpcenter.securiti.ai/glue-ingestion"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

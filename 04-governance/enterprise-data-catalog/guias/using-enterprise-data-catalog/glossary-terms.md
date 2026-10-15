@@ -5,7 +5,7 @@ updated: 2026-08-10T21:00:09Z
 published: 2026-08-10T21:00:09Z
 canonical: "helpcenter.securiti.ai/glossary-terms"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

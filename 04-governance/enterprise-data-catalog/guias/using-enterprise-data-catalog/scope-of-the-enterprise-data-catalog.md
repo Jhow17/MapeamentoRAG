@@ -5,7 +5,7 @@ updated: 2025-11-03T04:32:44Z
 published: 2025-11-03T04:32:44Z
 canonical: "helpcenter.securiti.ai/scope-of-the-enterprise-data-catalog"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

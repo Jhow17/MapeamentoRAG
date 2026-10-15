@@ -5,7 +5,7 @@ updated: 2026-10-05T09:16:47Z
 published: 2026-10-05T09:16:47Z
 canonical: "helpcenter.securiti.ai/clone-mysql-ingestion"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

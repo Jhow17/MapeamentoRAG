@@ -1,0 +1,4562 @@
+{
+  "info": {
+    "_postman_id": "d4810a55-b8f8-4ba5-9856-01ad1bc0e282",
+    "name": "Risk Management",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25175694"
+  },
+  "item": [
+    {
+      "name": "Using APIs with OAuth2.0",
+      "item": [
+        {
+          "name": "Get Oauth access token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "apikey {{X-API-KEY}}:{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/core/v1/oauth/get_access_token",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "core",
+                "v1",
+                "oauth",
+                "get_access_token"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] Get Oauth access token",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "apikey {{X-API-KEY}}:{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/core/v1/oauth/get_access_token",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "core",
+                    "v1",
+                    "oauth",
+                    "get_access_token"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24927"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1723539480"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"access_token\": \"__xxxx__\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "[OAuth] List Risks",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{Authorization}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "[200] List Risks",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "{{Authorization}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/risk",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "risk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=315360000"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Ratelimit-Limit",
+                  "value": "25000"
+                },
+                {
+                  "key": "X-Ratelimit-Remaining",
+                  "value": "24920"
+                },
+                {
+                  "key": "X-Ratelimit-Reset",
+                  "value": "1723539480"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"count\": 9,\n    \"next\": \"/privaci/v1/user/assessments/risk?limit=1&p=2\",\n    \"previous\": \"\",\n    \"data\": [\n        {\n            \"created_by\": 1,\n            \"modified_by\": 1,\n            \"created_at\": 1700566763957,\n            \"modified_at\": 1700566785018,\n            \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n            \"org_unit_id\": 34,\n            \"id\": 172,\n            \"state\": \"FLAGGED\",\n            \"description\": \"<p>Unauthorized access to admin panel</p>\",\n            \"recommendation\": \"Implement 2FA\",\n            \"deadline\": 1701198000000,\n            \"origin\": \"ASSIGNED\",\n            \"overdue\": true,\n            \"inherent_risk_value\": {\n                \"created_by\": 1,\n                \"modified_by\": 0,\n                \"created_at\": 1700566785790,\n                \"modified_at\": 0,\n                \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n                \"id\": 48,\n                \"severity\": 2,\n                \"likelihood\": 1,\n                \"level\": \"LOW\",\n                \"score\": 0\n            },\n            \"residual_risk_value\": null,\n            \"workflow\": {\n                \"id\": \"\"\n            },\n            \"tags\": []\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Controls Register",
+      "item": [
+        {
+          "name": "List Controls",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control"
+              ],
+              "query": [
+                {
+                  "key": "lite",
+                  "value": "false",
+                  "description": "Set to true to skip loading related data such as compliance control and effectiveness rating.",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "Encrypt PII",
+                  "description": "Enter a control ID, name, or description to search. Matches partial, case-insensitive text in the name or description.",
+                  "disabled": true
+                },
+                {
+                  "key": "owner",
+                  "value": "12",
+                  "description": "Enter the owner user ID. Repeat this parameter to filter by multiple owners.",
+                  "disabled": true
+                },
+                {
+                  "key": "reviewer",
+                  "value": "12",
+                  "description": "Enter the reviewer user ID. Repeat this parameter to filter by multiple reviewers.",
+                  "disabled": true
+                },
+                {
+                  "key": "risk_id",
+                  "value": "17",
+                  "description": "Enter the risk ID to filter by linked risk. Repeat this parameter to filter by multiple risks.",
+                  "disabled": true
+                },
+                {
+                  "key": "compliance_framework_id",
+                  "value": "iso-27001",
+                  "description": "Enter the compliance framework ID to filter by linked framework. Repeat this parameter to filter by multiple frameworks.",
+                  "disabled": true
+                },
+                {
+                  "key": "compliance_control_id",
+                  "value": "cc-pci-3.1",
+                  "description": "Enter the compliance control ID to filter by linked compliance control. Repeat this parameter to filter by multiple compliance controls.",
+                  "disabled": true
+                },
+                {
+                  "key": "tag_id",
+                  "value": "{{tag_uuid_1}}",
+                  "description": "Enter one or more tag IDs as comma-separated values.",
+                  "disabled": true
+                },
+                {
+                  "key": "tag_value_id",
+                  "value": "{{value_uuid_1}}",
+                  "description": "Enter one or more tag value IDs as comma-separated values.",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "25",
+                  "description": "Enter the number of records to fetch per page. Maximum 100 when lite is not true, values of -1 or greater than 100 are clamped to 100. Defaults to 25.",
+                  "disabled": true
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "description": "Enter the number of records to skip for pagination.",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Fetches a list of all controls. Supports filters: lite, search, owner, reviewer, risk_id, compliance_framework_id, compliance_control_id, tag_id, tag_value_id, limit, offset. When lite is true, compliance_control and effectiveness_rating are omitted from the response."
+          },
+          "response": [
+            {
+              "name": "[200 OK] List Controls",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control"
+                  ],
+                  "query": [
+                    {
+                      "key": "lite",
+                      "value": "false",
+                      "description": "Set to true to skip loading related data such as compliance control and effectiveness rating.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "search",
+                      "value": "Encrypt PII",
+                      "description": "Enter a control ID, name, or description to search. Matches partial, case-insensitive text in the name or description.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "owner",
+                      "value": "12",
+                      "description": "Enter the owner user ID. Repeat this parameter to filter by multiple owners.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "reviewer",
+                      "value": "12",
+                      "description": "Enter the reviewer user ID. Repeat this parameter to filter by multiple reviewers.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "risk_id",
+                      "value": "17",
+                      "description": "Enter the risk ID to filter by linked risk. Repeat this parameter to filter by multiple risks.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "compliance_framework_id",
+                      "value": "iso-27001",
+                      "description": "Enter the compliance framework ID to filter by linked framework. Repeat this parameter to filter by multiple frameworks.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "compliance_control_id",
+                      "value": "cc-pci-3.1",
+                      "description": "Enter the compliance control ID to filter by linked compliance control. Repeat this parameter to filter by multiple compliance controls.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "tag_id",
+                      "value": "{{tag_uuid_1}}",
+                      "description": "Enter one or more tag IDs as comma-separated values.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "tag_value_id",
+                      "value": "{{value_uuid_1}}",
+                      "description": "Enter one or more tag value IDs as comma-separated values.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "limit",
+                      "value": "25",
+                      "description": "Enter the number of records to fetch per page. Maximum 100 when lite is not true, values of -1 or greater than 100 are clamped to 100. Defaults to 25.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "offset",
+                      "value": "0",
+                      "description": "Enter the number of records to skip for pagination.",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\",\n    \"total_count\": 1,\n    \"data\": [\n        {\n            \"id\": 42,\n            \"state\": \"IN_PROGRESS\",\n            \"name\": \"Encrypt PII at rest\",\n            \"description\": \"AES-256 encryption for all PII-carrying data stores.\",\n            \"deadline\": 1743465600000,\n            \"expires_at\": 1775001600000,\n            \"compliance_control\": {\n                \"id\": \"cc-pci-3.1\",\n                \"name\": \"PCI DSS 3.1\"\n            },\n            \"effectiveness_rating\": {\n                \"id\": 91,\n                \"x_value\": 3,\n                \"y_value\": 2,\n                \"tenant_id\": \"h1com\",\n                \"created_by\": 12,\n                \"modified_by\": 12,\n                \"created_at\": 1741000000000,\n                \"modified_at\": 1741000000000\n            },\n            \"org_unit_id\": 1,\n            \"tenant_id\": \"h1com\",\n            \"created_by\": 12,\n            \"modified_by\": 12,\n            \"created_at\": 1740000000000,\n            \"modified_at\": 1741000000000\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Control by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/{{control_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "{{control_id}}"
+              ],
+              "query": [
+                {
+                  "key": "lite",
+                  "value": "false",
+                  "description": "Set to true to skip loading related data such as compliance control and effectiveness rating.",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Fetches a single control by ID. When lite is true, compliance_control and effectiveness_rating are omitted from the response."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Get Control by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/{{control_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "{{control_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "lite",
+                      "value": "false",
+                      "description": "Set to true to skip loading related data such as compliance control and effectiveness rating.",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 42,\n        \"state\": \"IN_PROGRESS\",\n        \"name\": \"Encrypt PII at rest\",\n        \"description\": \"AES-256 encryption for all PII-carrying data stores.\",\n        \"deadline\": 1743465600000,\n        \"expires_at\": 1775001600000,\n        \"compliance_control\": {\n            \"id\": \"cc-pci-3.1\",\n            \"name\": \"PCI DSS 3.1\"\n        },\n        \"effectiveness_rating\": {\n            \"id\": 91,\n            \"x_value\": 3,\n            \"y_value\": 2,\n            \"tenant_id\": \"h1com\",\n            \"created_by\": 12,\n            \"modified_by\": 12,\n            \"created_at\": 1741000000000,\n            \"modified_at\": 1741000000000\n        },\n        \"org_unit_id\": 1,\n        \"tenant_id\": \"h1com\",\n        \"created_by\": 12,\n        \"modified_by\": 12,\n        \"created_at\": 1740000000000,\n        \"modified_at\": 1741000000000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Control",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"name\": \"Encrypt PII at rest\",\n        \"description\": \"AES-256 encryption for all PII-carrying data stores.\",\n        \"deadline\": 1743465600000,\n        \"expires_at\": 1775001600000,\n        \"state\": \"NOT_IMPLEMENTED\",\n        \"effectiveness_rating\": {\n            \"x_value\": 3,\n            \"y_value\": 2\n        },\n        \"compliance_frameworks\": {\n            \"add\": [\n                {\n                    \"id\": \"iso-27001\"\n                }\n            ]\n        },\n        \"compliance_control\": {\n            \"id\": \"cc-pci-3.1\"\n        },\n        \"owners\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_owner}}\"\n                    }\n                }\n            ]\n        },\n        \"reviewers\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_reviewer}}\"\n                    }\n                }\n            ]\n        },\n        \"risks\": {\n            \"add\": [\n                {\n                    \"id\": 17\n                }\n            ]\n        },\n        \"attachments\": {\n            \"add\": [\n                {\n                    \"id\": 7\n                }\n            ]\n        },\n        \"links\": {\n            \"add\": [\n                {\n                    \"url\": \"https://wiki.example.com/policy\"\n                }\n            ]\n        },\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_1}}\",\n                    \"value_id\": \"{{value_uuid_1}}\"\n                }\n            ]\n        },\n        \"org_unit_id\": 1\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control"
+              ]
+            },
+            "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `name` | string | Required. Must not be empty. | `Encrypt PII at rest` |\n| `description` | string | Required. Must not be empty. | `AES-256 encryption for all PII-carrying data stores.` |\n| `deadline` | integer | Enter the deadline in Epoch format. | `1743465600000` |\n| `expires_at` | integer | Enter the expiry date in Epoch format. | `1775001600000` |\n| `state` | string | One of NOT_IMPLEMENTED, IN_PROGRESS, IN_REVIEW, IMPLEMENTED, EXPIRED. Defaults to NOT_IMPLEMENTED. | `NOT_IMPLEMENTED` |\n| `effectiveness_rating` | object | `x_value` is severity, `y_value` is likelihood. Bounds depend on tenant risk heatmap settings. `y_value` is forced to 0 in Linear mode. A value of 0 is a valid rating, not unset. | `{\"x_value\": 3, \"y_value\": 2}` |\n| `compliance_frameworks` | object | `{add: [{id}]}`. Non-system-defined frameworks must share the control's org unit. | `{\"add\": [{\"id\": \"iso-27001\"}]}` |\n| `compliance_control` | object | `{id}`. Pass an empty string as the ID to clear an existing link. | `{\"id\": \"cc-pci-3.1\"}` |\n| `owners` | object | `{add: [{user: {email}}]}`. If the email doesn't match an existing user, Securiti auto-provisions a guest account. | `{\"add\": [{\"user\": {\"email\": \"john.doe@securiti.ai\"}}]}` |\n| `reviewers` | object | `{add: [{user: {email}}]}`. Must be an existing non-guest user in the same org unit. Not auto-provisioned. | `{\"add\": [{\"user\": {\"email\": \"john.doe@securiti.ai\"}}]}` |\n| `risks` | object | `{add: [{id}]}`. A risk can also be linked from the risk's own details. | `{\"add\": [{\"id\": 17}]}` |\n| `attachments` | object | `{add: [{id}]}`. Upload the file first using Upload Attachment, then link it here by ID. | `{\"add\": [{\"id\": 7}]}` |\n| `links` | object | `{add: [{url}]}`. | `{\"add\": [{\"url\": \"https://wiki.example.com/policy\"}]}` |\n| `tags` | object | `{add: [{tag_id, value_id?, value_text?}]}`. Use value_id for a predefined tag value, value_text for free text. | `{\"add\": [{\"tag_id\": \"...\", \"value_id\": \"...\"}]}` |\n| `org_unit_id` | integer | Defaults to the caller's active org unit. | `1` |\n\nGuest users can't create a control."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Create Control",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"parameters\": {\n        \"name\": \"Encrypt PII at rest\",\n        \"description\": \"AES-256 encryption for all PII-carrying data stores.\",\n        \"deadline\": 1743465600000,\n        \"expires_at\": 1775001600000,\n        \"state\": \"NOT_IMPLEMENTED\",\n        \"effectiveness_rating\": {\n            \"x_value\": 3,\n            \"y_value\": 2\n        },\n        \"compliance_frameworks\": {\n            \"add\": [\n                {\n                    \"id\": \"iso-27001\"\n                }\n            ]\n        },\n        \"compliance_control\": {\n            \"id\": \"cc-pci-3.1\"\n        },\n        \"owners\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_owner}}\"\n                    }\n                }\n            ]\n        },\n        \"reviewers\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_reviewer}}\"\n                    }\n                }\n            ]\n        },\n        \"risks\": {\n            \"add\": [\n                {\n                    \"id\": 17\n                }\n            ]\n        },\n        \"attachments\": {\n            \"add\": [\n                {\n                    \"id\": 7\n                }\n            ]\n        },\n        \"links\": {\n            \"add\": [\n                {\n                    \"url\": \"https://wiki.example.com/policy\"\n                }\n            ]\n        },\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_1}}\",\n                    \"value_id\": \"{{value_uuid_1}}\"\n                }\n            ]\n        },\n        \"org_unit_id\": 1\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 42,\n        \"state\": \"NOT_IMPLEMENTED\",\n        \"name\": \"Encrypt PII at rest\",\n        \"description\": \"AES-256 encryption for all PII-carrying data stores.\",\n        \"org_unit_id\": 1,\n        \"created_by\": 12,\n        \"created_at\": 1741000000000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Control",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"state\": \"IMPLEMENTED\",\n        \"expires_at\": 1775001600000,\n        \"effectiveness_rating\": {\n            \"x_value\": 4,\n            \"y_value\": 3\n        },\n        \"compliance_frameworks\": {\n            \"add\": [\n                {\n                    \"id\": \"iso-27001\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": \"iso-27001\"\n                }\n            ]\n        },\n        \"compliance_control\": {\n            \"id\": \"cc-pci-3.1\"\n        },\n        \"owners\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_owner}}\"\n                    }\n                }\n            ],\n            \"remove\": [\n                {\n                    \"user\": {\n                        \"email\": \"john.doe@securiti.ai\"\n                    }\n                }\n            ]\n        },\n        \"reviewers\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_reviewer}}\"\n                    }\n                }\n            ],\n            \"remove\": [\n                {\n                    \"user\": {\n                        \"email\": \"john.doe@securiti.ai\"\n                    }\n                }\n            ]\n        },\n        \"risks\": {\n            \"add\": [\n                {\n                    \"id\": 17\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": 17\n                }\n            ]\n        },\n        \"attachments\": {\n            \"add\": [\n                {\n                    \"id\": 9\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": 3\n                }\n            ]\n        },\n        \"links\": {\n            \"add\": [\n                {\n                    \"url\": \"https://runbook.example.com\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": 5\n                }\n            ]\n        },\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_1}}\",\n                    \"value_id\": \"{{value_uuid_1}}\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_2}}\",\n                    \"value_id\": \"{{value_uuid_2}}\"\n                }\n            ]\n        },\n        \"org_unit_id\": 1\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/{{control_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "{{control_id}}"
+              ]
+            },
+            "description": "## Request body parameters\n\nAll fields are optional. Only supplied fields are updated. Every collection field supports both add and remove.\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `name` | string | Must not be empty. | `Encrypt PII at rest` |\n| `description` | string | Must not be empty. | `AES-256 encryption for all PII-carrying data stores.` |\n| `deadline` | integer | Enter the deadline in Epoch format. | `1743465600000` |\n| `expires_at` | integer | Enter the expiry date in Epoch format. | `1775001600000` |\n| `state` | string | One of NOT_IMPLEMENTED, IN_PROGRESS, IN_REVIEW, IMPLEMENTED, EXPIRED. | `IMPLEMENTED` |\n| `effectiveness_rating` | object | A value of 0 is a valid rating, not unset. | `{\"x_value\": 4, \"y_value\": 3}` |\n| `compliance_frameworks` | object | Non-system-defined frameworks must share the control's org unit. | `{\"add\": [...], \"remove\": [...]}` |\n| `compliance_control` | object | Pass an empty string as the ID to clear an existing link. | `{\"id\": \"cc-pci-3.1\"}` |\n| `owners` | object | If the email doesn't match an existing user, Securiti auto-provisions a guest account. | `{\"add\": [...], \"remove\": [...]}` |\n| `reviewers` | object | Must be an existing non-guest user in the same org unit. Not auto-provisioned. | `{\"add\": [...], \"remove\": [...]}` |\n| `risks` | object | A risk can also be linked from the risk's own details. | `{\"add\": [...], \"remove\": [...]}` |\n| `attachments` | object | Upload the file first using Upload Attachment, then link it here by ID. | `{\"add\": [...], \"remove\": [...]}` |\n| `links` | object | | `{\"add\": [...], \"remove\": [...]}` |\n| `tags` | object | Use value_id for a predefined tag value, value_text for free text. | `{\"add\": [...], \"remove\": [...]}` |\n| `org_unit_id` | integer | | `1` |"
+          },
+          "response": [
+            {
+              "name": "[200 OK] Update Control",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"parameters\": {\n        \"state\": \"IMPLEMENTED\",\n        \"expires_at\": 1775001600000,\n        \"effectiveness_rating\": {\n            \"x_value\": 4,\n            \"y_value\": 3\n        },\n        \"compliance_frameworks\": {\n            \"add\": [\n                {\n                    \"id\": \"iso-27001\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": \"iso-27001\"\n                }\n            ]\n        },\n        \"compliance_control\": {\n            \"id\": \"cc-pci-3.1\"\n        },\n        \"owners\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_owner}}\"\n                    }\n                }\n            ],\n            \"remove\": [\n                {\n                    \"user\": {\n                        \"email\": \"john.doe@securiti.ai\"\n                    }\n                }\n            ]\n        },\n        \"reviewers\": {\n            \"add\": [\n                {\n                    \"user\": {\n                        \"email\": \"{{control_reviewer}}\"\n                    }\n                }\n            ],\n            \"remove\": [\n                {\n                    \"user\": {\n                        \"email\": \"john.doe@securiti.ai\"\n                    }\n                }\n            ]\n        },\n        \"risks\": {\n            \"add\": [\n                {\n                    \"id\": 17\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": 17\n                }\n            ]\n        },\n        \"attachments\": {\n            \"add\": [\n                {\n                    \"id\": 9\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": 3\n                }\n            ]\n        },\n        \"links\": {\n            \"add\": [\n                {\n                    \"url\": \"https://runbook.example.com\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"id\": 5\n                }\n            ]\n        },\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_1}}\",\n                    \"value_id\": \"{{value_uuid_1}}\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_2}}\",\n                    \"value_id\": \"{{value_uuid_2}}\"\n                }\n            ]\n        },\n        \"org_unit_id\": 1\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/{{control_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "{{control_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 42,\n        \"state\": \"IMPLEMENTED\",\n        \"name\": \"Encrypt PII at rest\",\n        \"description\": \"AES-256 encryption for all PII-carrying data stores.\",\n        \"org_unit_id\": 1,\n        \"created_by\": 12,\n        \"created_at\": 1741000000000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Control",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/{{control_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "{{control_id}}"
+              ]
+            },
+            "description": "Deletes a control. Unlinks any attachments instead of deleting them, clears tags, and removes linked users and links. Guest users can't delete a control."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Delete Control",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/{{control_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "{{control_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Upload Attachment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/attachment",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "attachment"
+              ]
+            },
+            "description": "Uploads a file to use as a control attachment. The uploaded file isn't linked to a control yet. To link it, pass its ID in the attachments field of Create Control or Update Control. Maximum file size is 100 MB. A control can have up to 100 attachments. Allowed extensions: .txt, .json, .xml, .rtf, .csv, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .mp3, .wav, .ogg, .jpg, .jpeg, .png, .webp, .gif, .bmp, .mp4, .avi, .mov, .mkv, .rar, .zip, .eml, .msg."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Upload Attachment",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": [
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/attachment",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "attachment"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 7,\n        \"file_name\": \"policy.pdf\",\n        \"original_file_name\": \"policy.pdf\",\n        \"file_size\": 204800,\n        \"tenant_id\": \"h1com\",\n        \"created_by\": 12,\n        \"created_at\": 1741000000000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Download Attachments",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/attachment?ids=7,8",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "attachment"
+              ],
+              "query": [
+                {
+                  "key": "ids",
+                  "value": "7,8",
+                  "description": "Enter a comma-separated list of attachment IDs."
+                }
+              ]
+            },
+            "description": "Fetches short-lived signed URLs for one or more control attachments. Only owners or reviewers of the control the attachment belongs to can download it."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Download Attachments",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/attachment?ids=7,8",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "attachment"
+                  ],
+                  "query": [
+                    {
+                      "key": "ids",
+                      "value": "7,8",
+                      "description": "Enter a comma-separated list of attachment IDs."
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 7,\n            \"name\": \"policy.pdf\",\n            \"url\": \"https://s3.amazonaws.com/.../policy.pdf?...\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"audit.xlsx\",\n            \"url\": \"https://s3.amazonaws.com/.../audit.xlsx?...\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Export Controls",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"ids\": [\n            42,\n            43\n        ],\n        \"org_unit_ids\": [\n            1,\n            2\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/export",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "export"
+              ]
+            },
+            "description": "Enqueues an asynchronous export of controls to a CSV file. Securiti emails the file to the caller once it's ready. Guest users can't export controls.\n\n## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `ids` | array of integers | Enter the control IDs to export. Omit to export all controls. | `[42, 43]` |\n| `org_unit_ids` | array of integers | Accepted but has no effect. Securiti always exports from the caller's currently selected view organizations. | `[1, 2]` |"
+          },
+          "response": [
+            {
+              "name": "[200 OK] Export Controls",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"parameters\": {\n        \"ids\": [\n            42,\n            43\n        ],\n        \"org_unit_ids\": [\n            1,\n            2\n        ]\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/export",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "export"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Export Evidence",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"control_id\": 42,\n        \"include_controls\": true,\n        \"include_comments\": true,\n        \"include_links\": true,\n        \"arrangement\": \"nested\",\n        \"control_attachment_ids\": [\n            7,\n            8\n        ],\n        \"comment_attachment_ids\": [\n            15,\n            16\n        ],\n        \"link_ids\": [\n            11,\n            12\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/export-evidence",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "export-evidence"
+              ]
+            },
+            "description": "Enqueues an asynchronous task that bundles a control's attachments, comment attachments, and links into a zip file. Securiti emails a download link to the caller once it's ready. Guest users can't export evidence.\n\n## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `control_id` | integer | Required. Enter the control ID whose evidence to export. | `42` |\n| `include_controls` | boolean | Include control-level attachments. | `true` |\n| `include_comments` | boolean | Include comment-level attachments. | `true` |\n| `include_links` | boolean | Include links as a CSV file. | `true` |\n| `arrangement` | string | flat (all files in root) or nested (controls/, comments/, links/ sub-folders). Defaults to flat. | `nested` |\n| `control_attachment_ids` | array of integers | Has no effect unless include_controls is true. Omit to include all. | `[7, 8]` |\n| `comment_attachment_ids` | array of integers | Has no effect unless include_comments is true. Omit to include all. | `[15, 16]` |\n| `link_ids` | array of integers | Has no effect unless include_links is true. Omit to include all. | `[11, 12]` |"
+          },
+          "response": [
+            {
+              "name": "[200 OK] Export Evidence",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"parameters\": {\n        \"control_id\": 42,\n        \"include_controls\": true,\n        \"include_comments\": true,\n        \"include_links\": true,\n        \"arrangement\": \"nested\",\n        \"control_attachment_ids\": [\n            7,\n            8\n        ],\n        \"comment_attachment_ids\": [\n            15,\n            16\n        ],\n        \"link_ids\": [\n            11,\n            12\n        ]\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/export-evidence",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "export-evidence"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Download Import Sample CSV",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/import",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "import"
+              ]
+            },
+            "description": "Fetches a sample CSV file showing the expected column headers for importing controls. Effectiveness rating column names vary depending on whether the tenant uses Matrix or Linear risk settings."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Download Import Sample CSV",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/import",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "import"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "cookie": [],
+              "body": "Effectiveness-rating column names vary by tenant heatmap settings. Download this endpoint directly against your own tenant to see the exact header row."
+            }
+          ]
+        },
+        {
+          "name": "Import Controls",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/control/import",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "control",
+                "import"
+              ]
+            },
+            "description": "Bulk imports controls using a CSV file. Enqueues an asynchronous import task, and Securiti emails the result to the caller once it's done. Guest users can't import controls. Column names, including effectiveness rating columns, vary by tenant. Download the sample CSV first to confirm the expected format for your tenant."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Import Controls",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": [
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/assessments/control/import",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "assessments",
+                    "control",
+                    "import"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 0,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "item": [
+        {
+          "name": "List Comments",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/{{entity_type}}/{{entity_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "{{entity_type}}",
+                "{{entity_id}}"
+              ]
+            },
+            "description": "Returns all comments on the entity visible to the caller. Guest and default users see only public comments scoped to entities they're assigned to."
+          },
+          "response": [
+            {
+              "name": "[200 OK] List Comments",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/{{entity_type}}/{{entity_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "{{entity_type}}",
+                    "{{entity_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 101,\n            \"entity_type\": \"control\",\n            \"entity_id\": \"42\",\n            \"parent_id\": null,\n            \"body\": \"Encryption policy updated.\",\n            \"type\": \"public\",\n            \"is_edited\": false,\n            \"created_at\": 1741000000000,\n            \"created_by\": 12,\n            \"mentioned_user_ids\": [],\n            \"attachments\": []\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Comment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"entity_type\": \"control\",\n    \"entity_id\": \"{{entity_id}}\",\n    \"body\": \"Encryption policy updated.\",\n    \"type\": \"public\",\n    \"parent_id\": null,\n    \"mentioned_user_ids\": [\n        15,\n        18\n    ],\n    \"attachments\": {\n        \"add\": [\n            7,\n            9\n        ],\n        \"remove\": []\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments"
+              ]
+            },
+            "description": "Create a comment on an entity. Use entity_type: \"control\" for a control. Reviewers can create private comments; any assigned user (owner or reviewer) can create a public comment.\n\n## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `entity_type` | string | Required. Use control for a control. | `control` |\n| `entity_id` | string | Required. Enter the entity's ID as a string. | `42` |\n| `body` | string | Required. Must not be empty. Maximum 2048 characters. | `Encryption policy updated.` |\n| `type` | string | Required. public or private. Private comments can only be created by reviewers. | `public` |\n| `parent_id` | integer | Enter the parent comment's ID to reply in a thread. | `null` |\n| `mentioned_user_ids` | array of integers | Enter the user IDs to notify. Users must already be participants on the entity. | `[15, 18]` |\n| `attachments` | object | `{add: [ids], remove: [ids]}`. Upload the file first using Upload comment attachment, then link it here by ID. | `{\"add\": [7, 9], \"remove\": []}` |"
+          },
+          "response": [
+            {
+              "name": "[200 OK] Create Comment",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"entity_type\": \"control\",\n    \"entity_id\": \"{{entity_id}}\",\n    \"body\": \"Encryption policy updated.\",\n    \"type\": \"public\",\n    \"parent_id\": null,\n    \"mentioned_user_ids\": [\n        15,\n        18\n    ],\n    \"attachments\": {\n        \"add\": [\n            7,\n            9\n        ],\n        \"remove\": []\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Comment",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"body\": \"Updated encryption policy note.\",\n    \"type\": \"public\",\n    \"mentioned_user_ids\": [\n        15\n    ],\n    \"attachments\": {\n        \"add\": [\n            11\n        ],\n        \"remove\": [\n            7\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/{{comment_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "{{comment_id}}"
+              ]
+            },
+            "description": "Update an existing comment. Only the original author can update a comment. At least one of body or type must be present. Entity binding can't be changed.\n\n## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `body` | string | At least one of body or type must be present. Maximum 5120 characters. | `Updated encryption policy note.` |\n| `type` | string | At least one of body or type must be present. public or private. | `public` |\n| `mentioned_user_ids` | array of integers | Enter the user IDs to notify. Users must already be participants on the entity. | `[15]` |\n| `attachments` | object | `{add: [ids], remove: [ids]}` | `{\"add\": [11], \"remove\": [7]}` |"
+          },
+          "response": [
+            {
+              "name": "[200 OK] Update Comment",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"body\": \"Updated encryption policy note.\",\n    \"type\": \"public\",\n    \"mentioned_user_ids\": [\n        15\n    ],\n    \"attachments\": {\n        \"add\": [\n            11\n        ],\n        \"remove\": [\n            7\n        ]\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/{{comment_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "{{comment_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 101,\n        \"body\": \"Updated encryption policy note.\",\n        \"type\": \"public\",\n        \"is_edited\": true,\n        \"created_at\": 1741000000000,\n        \"created_by\": 12\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Comment",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/{{comment_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "{{comment_id}}"
+              ]
+            },
+            "description": "Delete a comment. Only the original author can delete a comment."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Delete Comment",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/{{comment_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "{{comment_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Comment Counts",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/{{entity_type}}/{{entity_id}}/counts",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "{{entity_type}}",
+                "{{entity_id}}",
+                "counts"
+              ]
+            },
+            "description": "Fetch the caller's unread comment count and mention count on an entity."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Get Comment Counts",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/{{entity_type}}/{{entity_id}}/counts",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "{{entity_type}}",
+                    "{{entity_id}}",
+                    "counts"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"data\": {\n        \"unread_count\": 3,\n        \"mention_count\": 1\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Mark Comments as Read",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/{{entity_type}}/{{entity_id}}/mark-read",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "{{entity_type}}",
+                "{{entity_id}}",
+                "mark-read"
+              ]
+            },
+            "description": "Update the caller's last-read timestamp for an entity. After calling this, Get Comment Counts returns unread_count: 0 for the caller on this entity."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Mark Comments as Read",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/{{entity_type}}/{{entity_id}}/mark-read",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "{{entity_type}}",
+                    "{{entity_id}}",
+                    "mark-read"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"Comments marked as read\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Upload Comment Attachment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/attachments",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "attachments"
+              ]
+            },
+            "description": "Upload a file as a comment attachment, without linking it to a comment yet. To link it later, pass its ID in the attachments field of Create Comment or Update Comment. Only the uploader can delete the attachment. Maximum file size is 100 MB. A comment can have up to 10 attachments. Allowed extensions: .txt, .json, .xml, .rtf, .csv, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .mp3, .wav, .ogg, .jpg, .jpeg, .png, .webp, .gif, .bmp, .mp4, .avi, .mov, .mkv, .rar, .zip, .eml, .msg."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Upload Comment Attachment",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": [
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/attachments",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "attachments"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 7,\n        \"file_name\": \"evidence.pdf\",\n        \"original_file_name\": \"evidence.pdf\",\n        \"file_size\": 102400,\n        \"comment_id\": null,\n        \"created_by\": 12,\n        \"created_at\": 1741000000000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Upload and Link Comment Attachment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/attachments/{{comment_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "attachments",
+                "{{comment_id}}"
+              ]
+            },
+            "description": "Upload a file and link it to an existing comment in one step. Same limits and restrictions as Upload Comment Attachment."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Upload and Link Comment Attachment",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": [
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/attachments/{{comment_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "attachments",
+                    "{{comment_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 7,\n        \"file_name\": \"evidence.pdf\",\n        \"original_file_name\": \"evidence.pdf\",\n        \"file_size\": 102400,\n        \"comment_id\": 101,\n        \"created_by\": 12,\n        \"created_at\": 1741000000000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Comment Attachment",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/attachments/{{attachment_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "attachments",
+                "{{attachment_id}}"
+              ]
+            },
+            "description": "Delete a comment attachment record and its file from storage. Only the original uploader can delete it."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Delete Comment Attachment",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/attachments/{{attachment_id}}",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "attachments",
+                    "{{attachment_id}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Download Comment Attachments",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/comments/attachments?ids=7,8",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "comments",
+                "attachments"
+              ],
+              "query": [
+                {
+                  "key": "ids",
+                  "value": "7,8",
+                  "description": "Enter a comma-separated list of attachment IDs."
+                }
+              ]
+            },
+            "description": "Fetch short-lived signed URLs for one or more comment attachments."
+          },
+          "response": [
+            {
+              "name": "[200 OK] Download Comment Attachments",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "X-TIDENT",
+                    "value": "{{X-TIDENT}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-KEY",
+                    "value": "{{X-API-KEY}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "X-API-SECRET",
+                    "value": "{{X-API-SECRET}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{host-url}}/privaci/v1/user/comments/attachments?ids=7,8",
+                  "host": [
+                    "{{host-url}}"
+                  ],
+                  "path": [
+                    "privaci",
+                    "v1",
+                    "user",
+                    "comments",
+                    "attachments"
+                  ],
+                  "query": [
+                    {
+                      "key": "ids",
+                      "value": "7,8",
+                      "description": "Enter a comma-separated list of attachment IDs."
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"data\": [\n        {\n            \"id\": \"7\",\n            \"name\": \"policy.pdf\",\n            \"url\": \"https://s3.amazonaws.com/.../policy.pdf?...\"\n        },\n        {\n            \"id\": \"8\",\n            \"name\": \"audit.xlsx\",\n            \"url\": \"https://s3.amazonaws.com/.../audit.xlsx?...\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "List Risks",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk"
+          ],
+          "query": [
+            {
+              "key": "owners",
+              "value": "1",
+              "description": "Enter the owner user ID. Repeat this parameter to filter by multiple owners.",
+              "disabled": true
+            },
+            {
+              "key": "reviewers",
+              "value": "2",
+              "description": "Enter the reviewer user ID. Repeat this parameter to filter by multiple reviewers.",
+              "disabled": true
+            },
+            {
+              "key": "objects",
+              "value": "302",
+              "description": "Enter the linked object ID for Data Mapping objects. See here for object type Assessment. Repeat this parameter to filter by multiple linked objects.",
+              "disabled": true
+            },
+            {
+              "key": "object_types",
+              "value": "ASSESSMENT",
+              "description": "Enter the linked object type. Repeat this parameter to filter by multiple object types.",
+              "disabled": true
+            },
+            {
+              "key": "tag_id",
+              "value": "799cdfe1-7c51-429a-b4a7-f4d46b30b8ac,ec1011d8-87fd-4e45-9971-a7eb569bdd77",
+              "description": "Enter one or more tag IDs as comma-separated values.",
+              "disabled": true
+            },
+            {
+              "key": "tag_value_id",
+              "value": "799cdfe1-7c51-429a-b4a7-f4d46b30b8ac,ec1011d8-87fd-4e45-9971-a7eb569bdd77",
+              "description": "Enter one or more tag value IDs as comma-separated values.",
+              "disabled": true
+            },
+            {
+              "key": "search",
+              "value": "172",
+              "description": "Enter the risk ID or description to search.",
+              "disabled": true
+            },
+            {
+              "key": "limit",
+              "value": "1",
+              "description": "Enter the number of records to fetch per page.",
+              "disabled": true
+            },
+            {
+              "key": "p",
+              "value": "2",
+              "description": "Enter the page number to fetch.",
+              "disabled": true
+            }
+          ]
+        },
+        "description": "Fetches a list of all risks. Supports filters: owners, reviewers, objects, object_types, tag_id, tag_value_id, search, limit, p."
+      },
+      "response": [
+        {
+          "name": "[200 OK] List Risks",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk"
+              ],
+              "query": [
+                {
+                  "key": "owners",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "reviewers",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "objects",
+                  "value": "302",
+                  "disabled": true
+                },
+                {
+                  "key": "object_types",
+                  "value": "ASSESSMENT",
+                  "disabled": true
+                },
+                {
+                  "key": "tag_id",
+                  "value": "",
+                  "description": "Comma-separated tag UUIDs",
+                  "disabled": true
+                },
+                {
+                  "key": "tag_value_id",
+                  "value": "",
+                  "description": "Comma-separated value UUIDs",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "",
+                  "description": "Search by risk ID or description",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "p",
+                  "value": "1",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"count\": 9,\n    \"next\": \"/privaci/v1/user/assessments/risk?limit=1&p=2\",\n    \"previous\": \"\",\n    \"data\": [\n        {\n            \"created_by\": 1,\n            \"modified_by\": 1,\n            \"created_at\": 1700566763957,\n            \"modified_at\": 1700566785018,\n            \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n            \"org_unit_id\": 34,\n            \"id\": 172,\n            \"state\": \"FLAGGED\",\n            \"description\": \"<p>Unauthorized access to admin panel</p>\",\n            \"recommendation\": \"Implement 2FA\",\n            \"deadline\": 1701198000000,\n            \"origin\": \"ASSIGNED\",\n            \"overdue\": true,\n            \"inherent_risk_value\": {\n                \"created_by\": 1,\n                \"modified_by\": 0,\n                \"created_at\": 1700566785790,\n                \"modified_at\": 0,\n                \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n                \"id\": 48,\n                \"severity\": 2,\n                \"likelihood\": 1,\n                \"level\": \"LOW\",\n                \"score\": 0\n            },\n            \"residual_risk_value\": null,\n            \"workflow\": {\n                \"id\": \"\"\n            },\n            \"tags\": [\n                {\n                    \"id\": \"a1b2c3d4-0000-0000-0000-111111111111\",\n                    \"tag_id\": \"tag-uuid-1\",\n                    \"tag_name\": \"Risk Category\",\n                    \"tag_type\": \"DROPDOWN\",\n                    \"is_system\": false,\n                    \"value_id\": \"val-uuid-1\",\n                    \"value_text\": \"Cybersecurity\",\n                    \"object_type\": \"RISK\",\n                    \"object_id\": \"172\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Risk",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"description\": \"Unauthorized access to admin panel\",\n        \"recommendation\": \"Implement 2FA\",\n        \"deadline\": 1700000000,\n        \"workflow\": {\n            \"id\": \"1\"\n        },\n        \"inherent_risk_value\": {\n            \"level\": \"HIGH\",\n            \"severity\": 4,\n            \"likelihood\": 5\n        },\n        \"owners\": [\n            {\n                \"user\": {\n                    \"email\": \"{{risk_owner}}\"\n                }\n            }\n        ],\n        \"reviewers\": [\n            {\n                \"user\": {\n                    \"email\": \"{{risk_reviewer}}\"\n                }\n            }\n        ],\n        \"linked_objects\": [\n            {\n                \"object_id\": \"27\",\n                \"object_type\": \"ASSESSMENT_RESPONSE\"\n            }\n        ],\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_1}}\",\n                    \"value_id\": \"{{value_uuid_1}}\"\n                }\n            ]\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk"
+          ]
+        },
+        "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `description` | string | Specify the risk description. | `Risk of unauthorized data access` |\n| `recommendation` | string | Specify the risk recommendation. | `Implement 2FA` |\n| `deadline` | integer | Enter the deadline in Epoch format. | `1700000000` |"
+      },
+      "response": [
+        {
+          "name": "[200 OK] Create Risk",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"description\": \"Unauthorized access to admin panel\",\n        \"recommendation\": \"Implement 2FA\",\n        \"deadline\": 1700000000,\n        \"workflow\": {\n            \"id\": \"1\"\n        },\n        \"inherent_risk_value\": {\n            \"level\": \"HIGH\",\n            \"severity\": 4,\n            \"likelihood\": 5\n        },\n        \"owners\": [\n            {\n                \"user\": {\n                    \"email\": \"{{risk_owner}}\"\n                }\n            }\n        ],\n        \"reviewers\": [\n            {\n                \"user\": {\n                    \"email\": \"{{risk_reviewer}}\"\n                }\n            }\n        ],\n        \"linked_objects\": [\n            {\n                \"object_id\": \"27\",\n                \"object_type\": \"ASSESSMENT_RESPONSE\"\n            }\n        ],\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"{{tag_uuid_1}}\",\n                    \"value_id\": \"{{value_uuid_1}}\"\n                }\n            ]\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 1,\n        \"modified_by\": 1,\n        \"created_at\": 1700566763957,\n        \"modified_at\": 1700566763957,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"org_unit_id\": 34,\n        \"id\": 173,\n        \"state\": \"DRAFT\",\n        \"description\": \"Unauthorized access to admin panel\",\n        \"recommendation\": \"Implement 2FA\",\n        \"deadline\": 1700000000,\n        \"origin\": \"ASSIGNED\",\n        \"overdue\": false,\n        \"inherent_risk_value\": {\n            \"created_by\": 1,\n            \"modified_by\": 0,\n            \"created_at\": 1700566763957,\n            \"modified_at\": 0,\n            \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n            \"id\": 49,\n            \"severity\": 4,\n            \"likelihood\": 5,\n            \"level\": \"HIGH\",\n            \"score\": 0\n        },\n        \"residual_risk_value\": null,\n        \"workflow\": {\n            \"id\": \"1\"\n        },\n        \"tags\": []\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Risk by ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}?risk_id=17699",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "17699",
+              "description": "Enter the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Fetches a specific risk by ID."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Get Risk by ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"created_by\": 3004,\n            \"modified_by\": 3004,\n            \"created_at\": 1764929324370,\n            \"modified_at\": 1764929324370,\n            \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n            \"org_unit_id\": 34,\n            \"id\": 17699,\n            \"state\": \"DRAFT\",\n            \"description\": \"Unauthorized access to admin panel\",\n            \"recommendation\": \"Implement 2FA\",\n            \"deadline\": 1700000000,\n            \"origin\": \"ASSIGNED\",\n            \"overdue\": false,\n            \"inherent_risk_value\": {\n                \"created_by\": 1,\n                \"modified_by\": 0,\n                \"created_at\": 1700566785790,\n                \"modified_at\": 0,\n                \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n                \"id\": 48,\n                \"severity\": 2,\n                \"likelihood\": 1,\n                \"level\": \"LOW\",\n                \"score\": 0\n            },\n            \"residual_risk_value\": null,\n            \"workflow\": {\n                \"id\": \"1\"\n            },\n            \"tags\": [\n                {\n                    \"id\": \"a1b2c3d4-0000-0000-0000-111111111111\",\n                    \"tag_id\": \"tag-uuid-1\",\n                    \"tag_name\": \"Risk Category\",\n                    \"tag_type\": \"DROPDOWN\",\n                    \"is_system\": false,\n                    \"value_id\": \"val-uuid-1\",\n                    \"value_text\": \"Cybersecurity\",\n                    \"object_type\": \"RISK\",\n                    \"object_id\": \"17699\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Risk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"description\": \"Unauthorized access to admin panel (updated)\",\n        \"recommendation\": \"Implement 2FA\",\n        \"deadline\": null,\n        \"workflow\": {\n            \"id\": null\n        },\n        \"level\": \"HIGH\",\n        \"severity\": 0,\n        \"likelihood\": 0,\n        \"dimension\": 5,\n        \"category_score\": null,\n        \"inherent_risk_value\": {\n            \"level\": \"HIGH\",\n            \"level_id\": null,\n            \"severity\": 2,\n            \"likelihood\": 2\n        },\n        \"owners\": [\n            {\n                \"user\": {\n                    \"id\": 1420,\n                    \"email\": \"john.doe@securiti.ai\"\n                }\n            }\n        ],\n        \"reviewers\": [\n            {\n                \"user\": {\n                    \"id\": 1421,\n                    \"email\": \"john.doe@securiti.ai\"\n                }\n            }\n        ],\n        \"org_unit_id\": 1,\n        \"linked_objects\": [\n            {\n                \"object_id\": \"317400\",\n                \"object_type\": \"ASSESSMENT_RESPONSE\"\n            }\n        ],\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"tag-uuid-1\",\n                    \"value_id\": \"val-uuid-1\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"tag_id\": \"tag-uuid-2\",\n                    \"value_id\": \"val-uuid-2\"\n                }\n            ]\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}?risk_id=2214",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "2214",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `description` | string | Specify the risk description. | `Risk of unauthorized data access` |\n| `recommendation` | string | Specify the risk recommendation. | `Implement 2FA` |\n| `deadline` | integer | Enter the deadline in Epoch format. | `1700000000` |\n| `level` | string | Specify the risk level. | `HIGH` |\n| `severity` | integer | Specify the risk severity. | `0` |\n| `likelihood` | integer | Specify the risk likelihood. | `0` |\n| `dimension` | integer | Specify the risk dimension. | `5` |\n| `category_score` | integer | Specify the category score. | `0` |\n| `org_unit_id` | integer | Specify the organization unit ID. | `1` |"
+      },
+      "response": [
+        {
+          "name": "[200 OK] Update Risk",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"description\": \"Unauthorized access to admin panel (updated)\",\n        \"recommendation\": \"Implement 2FA\",\n        \"deadline\": null,\n        \"workflow\": {\n            \"id\": null\n        },\n        \"level\": \"HIGH\",\n        \"severity\": 0,\n        \"likelihood\": 0,\n        \"dimension\": 5,\n        \"category_score\": null,\n        \"inherent_risk_value\": {\n            \"level\": \"HIGH\",\n            \"level_id\": null,\n            \"severity\": 2,\n            \"likelihood\": 2\n        },\n        \"owners\": [\n            {\n                \"user\": {\n                    \"id\": 1420,\n                    \"email\": \"john.doe@securiti.ai\"\n                }\n            }\n        ],\n        \"reviewers\": [\n            {\n                \"user\": {\n                    \"id\": 1421,\n                    \"email\": \"john.doe@securiti.ai\"\n                }\n            }\n        ],\n        \"org_unit_id\": 1,\n        \"linked_objects\": [\n            {\n                \"object_id\": \"317400\",\n                \"object_type\": \"ASSESSMENT_RESPONSE\"\n            }\n        ],\n        \"tags\": {\n            \"add\": [\n                {\n                    \"tag_id\": \"tag-uuid-1\",\n                    \"value_id\": \"val-uuid-1\"\n                }\n            ],\n            \"remove\": [\n                {\n                    \"tag_id\": \"tag-uuid-2\",\n                    \"value_id\": \"val-uuid-2\"\n                }\n            ]\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"attachments\": [],\n        \"category_score\": null,\n        \"created_at\": 1716960395011,\n        \"created_by\": 1,\n        \"deadline\": 0,\n        \"description\": \"<p>Unauthorized access to admin panel (updated)</p>\",\n        \"dimension\": 5,\n        \"exception_note\": \"\",\n        \"id\": 2214,\n        \"level\": \"HIGH\",\n        \"likelihood\": 0,\n        \"modified_at\": 1716965267993,\n        \"modified_by\": 1,\n        \"origin\": \"ASSIGNED\",\n        \"overdue\": false,\n        \"owner\": {\n            \"id\": 1\n        },\n        \"recommendation\": \"Implement 2FA\",\n        \"rejection_note\": \"\",\n        \"remediation_note\": \"\",\n        \"severity\": 0,\n        \"state\": \"DRAFT\",\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"workflow\": {\n            \"id\": \"\"\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Risk",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}?risk_id=2214",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "2214",
+              "description": "Enter the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Deletes a risk and all its associations."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Delete Risk",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Export Risks",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"ids\": [\n            17728,\n            17729\n        ]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/export",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "export"
+          ]
+        },
+        "description": "Exports risks. If ids are not provided, all non-draft risks are exported."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Export Risks",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"ids\": [\n            17728,\n            17729\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/export",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "export"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Import Risks",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "value": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/import",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "import"
+          ]
+        },
+        "description": "Imports risks using a CSV file."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Import Risks",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/import",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "import"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Download Import Sample CSV",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/import",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "import"
+          ]
+        },
+        "description": "Fetches a sample CSV file for importing risks."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Download Import Sample CSV",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/import",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "import"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "text",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/csv"
+            }
+          ],
+          "cookie": [],
+          "body": "Org Unit ID,Description,Recommendation,Inherent Risk Severity,Inherent Risk Likelihood,Deadline (DD-MM-YYYY),Owners Emails,Reviewers Emails,Linked Assessment IDs,Linked Data Map Asset IDs,Linked Data Map Vendor IDs,Linked Data Map Process IDs,Linked Data Map Legal Entity IDs"
+        }
+      ]
+    },
+    {
+      "name": "Upload Attachment",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "value": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/attachments?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "attachments"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Uploads an attachment for a specific risk."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Upload Attachment",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/attachments",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "attachments"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": {\n        \"id\": 1\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Download Attachment",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/attachments/{{attachment_id}}?risk_id=20332&attachment_id=1",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "attachments",
+            "{{attachment_id}}"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            },
+            {
+              "key": "attachment_id",
+              "value": "1",
+              "description": "Specify the attachment ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Fetches a download URL for a specific risk attachment."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Download Attachment",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/attachments/{{attachment_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "attachments",
+                "{{attachment_id}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": {\n        \"name\": \"risk_evidence.pdf\",\n        \"url\": \"https://storage.example.com/tenant/assessments/risk/risk_evidence.pdf?Expires=1700566999&Signature=abc123\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Attachment",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/attachments/{{attachment_id}}?risk_id=20332&attachment_id=1",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "attachments",
+            "{{attachment_id}}"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            },
+            {
+              "key": "attachment_id",
+              "value": "1",
+              "description": "Specify the attachment ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Deletes a specific attachment for a risk."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Delete Attachment",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/attachments/{{attachment_id}}",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "attachments",
+                "{{attachment_id}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Propose Remediation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"description\": \"Proposed remediation plan for the risk\",\n        \"links\": [\n            \"https://jira.example.com/browse/SEC-101\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/propose_remediation?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "activity",
+            "propose_remediation"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `description` | string | Specify the remediation plan description. | `proposed remediation plan for the risk` |"
+      },
+      "response": [
+        {
+          "name": "[200 OK] Propose Remediation",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"description\": \"Proposed remediation plan for the risk\",\n        \"links\": [\n            \"https://jira.example.com/browse/SEC-101\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/propose_remediation",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "activity",
+                "propose_remediation"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 3004,\n        \"modified_by\": 3004,\n        \"created_at\": 1765342674411,\n        \"modified_at\": 1765342674411,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"id\": 14,\n        \"type\": \"REMEDIATION\",\n        \"description\": \"Proposed remediation plan for the risk\",\n        \"links\": \"https://jira.example.com/browse/SEC-101\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Approve Remediation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"residual_risk_value\": {\n            \"level\": \"LOW\",\n            \"severity\": 4,\n            \"likelihood\": 5\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/approve_remediation?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "activity",
+            "approve_remediation"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Approves the remediation plan for a specific risk."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Approve Remediation",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"residual_risk_value\": {\n            \"level\": \"LOW\",\n            \"severity\": 4,\n            \"likelihood\": 5\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/approve_remediation",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "activity",
+                "approve_remediation"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 3004,\n        \"modified_by\": 3004,\n        \"created_at\": 1765342792044,\n        \"modified_at\": 1765342792044,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"id\": 15,\n        \"type\": \"REMEDIATION_APPROVAL\",\n        \"description\": \"\",\n        \"links\": null\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Send Back Remediation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"description\": \"Sending back remediation for revision\",\n        \"links\": [\n            \"\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/send_back_remediation?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "activity",
+            "send_back_remediation"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `description` | string | Specify the reason for sending back the remediation. | `sending back remediation for revision` |"
+      },
+      "response": [
+        {
+          "name": "[200 OK] Send Back Remediation",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"description\": \"Sending back remediation for revision\",\n        \"links\": [\n            \"\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/send_back_remediation",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "activity",
+                "send_back_remediation"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 3004,\n        \"modified_by\": 3004,\n        \"created_at\": 1765342858072,\n        \"modified_at\": 1765342858072,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"id\": 17,\n        \"type\": \"REMEDIATION_SEND_BACK\",\n        \"description\": \"Sending back remediation for revision\",\n        \"links\": \"\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Request Exception",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"description\": \"Requesting exception for the risk\",\n        \"links\": [\n            \"\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/request_exception?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "activity",
+            "request_exception"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `description` | string | Specify the reason for requesting an exception. | `requesting exception for the risk` |"
+      },
+      "response": [
+        {
+          "name": "[200 OK] Request Exception",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"description\": \"Requesting exception for the risk\",\n        \"links\": [\n            \"\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/request_exception",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "activity",
+                "request_exception"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 3004,\n        \"modified_by\": 3004,\n        \"created_at\": 1765342968960,\n        \"modified_at\": 1765342968960,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"id\": 20,\n        \"type\": \"EXCEPTION\",\n        \"description\": \"Requesting exception for the risk\",\n        \"links\": \"\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Approve Exception",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/approve_exception?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "activity",
+            "approve_exception"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "Approves the exception request for a specific risk. No request body required."
+      },
+      "response": [
+        {
+          "name": "[200 OK] Approve Exception",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/approve_exception",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "activity",
+                "approve_exception"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 3004,\n        \"modified_by\": 3004,\n        \"created_at\": 1765343072493,\n        \"modified_at\": 1765343072493,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"id\": 21,\n        \"type\": \"EXCEPTION_APPROVAL\",\n        \"description\": \"\",\n        \"links\": null\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Send Back Exception",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-KEY",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"parameters\": {\n        \"description\": \"Sending back exception for revision\",\n        \"links\": [\n            \"\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/send_back_exception?risk_id=20332",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "user",
+            "assessments",
+            "risk",
+            "{{risk_id}}",
+            "activity",
+            "send_back_exception"
+          ],
+          "query": [
+            {
+              "key": "risk_id",
+              "value": "20332",
+              "description": "Specify the risk ID.",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "## Request body parameters\n\n| Parameter | Type | Description | Example |\n| --- | --- | --- | --- |\n| `description` | string | Specify the reason for sending back the exception. | `sending back exception for revision` |"
+      },
+      "response": [
+        {
+          "name": "[200 OK] Send Back Exception",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"parameters\": {\n        \"description\": \"Sending back exception for revision\",\n        \"links\": [\n            \"\"\n        ],\n        \"attachments\": [\n            {\n                \"id\": 1\n            }\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/user/assessments/risk/{{risk_id}}/activity/send_back_exception",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "user",
+                "assessments",
+                "risk",
+                "{{risk_id}}",
+                "activity",
+                "send_back_exception"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": {\n        \"created_by\": 3004,\n        \"modified_by\": 3004,\n        \"created_at\": 1765343215268,\n        \"modified_at\": 1765343215268,\n        \"tenant_id\": \"5ccf44d6-4cae-43be-8e97-dfb057f97d11\",\n        \"id\": 23,\n        \"type\": \"EXCEPTION_SEND_BACK\",\n        \"description\": \"Sending back exception for revision\",\n        \"links\": \"\"\n    }\n}"
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "host-url",
+      "value": "https://app.securiti.ai"
+    },
+    {
+      "key": "X-TIDENT",
+      "value": ""
+    },
+    {
+      "key": "X-API-KEY",
+      "value": ""
+    },
+    {
+      "key": "X-API-SECRET",
+      "value": ""
+    },
+    {
+      "key": "risk_id",
+      "value": "172"
+    },
+    {
+      "key": "attachment_id",
+      "value": "1"
+    },
+    {
+      "key": "risk_owner",
+      "value": "john.doe@securiti.ai"
+    },
+    {
+      "key": "risk_reviewer",
+      "value": "john.doe@securiti.ai"
+    },
+    {
+      "key": "tag_uuid_1",
+      "value": "tag-uuid-1"
+    },
+    {
+      "key": "value_uuid_1",
+      "value": "val-uuid-1"
+    }
+  ]
+}

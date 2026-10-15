@@ -6,7 +6,7 @@ published: 2026-07-18T12:40:10Z
 canonical: "helpcenter.securiti.ai/dqcheckpoints"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

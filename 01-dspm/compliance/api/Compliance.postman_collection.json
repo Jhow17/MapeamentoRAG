@@ -1,0 +1,1112 @@
+{
+  "info": {
+    "_postman_id": "ddd20ee5-357c-49cf-a1c3-7fc2b50ec06e",
+    "name": "Compliance",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25790942"
+  },
+  "item": [
+    {
+      "name": "Get Frameworks list ",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/framework",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "framework"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Get Frameworks list",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/framework",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "framework"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Mon, 03 Aug 2026 12:03:01 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"List request completed successfully\",\n    \"data\": [\n        {\n            \"id\": \"1060\",\n            \"name\": \"NIST CSF\",\n            \"description\": \"NIST CSF-NIST Cybersecurity Framework is a set of guidelines for mitigating organizational cybersecurity risks, published by the US National Institute of Standards and Technology (NIST) based on existing standards, guidelines, and practices. The NIST Cybersecurity Framework organizes its core material into five functions which are subdivided into a total of 23 categories and further subdivided into 108 subcategories.\",\n            \"domain\": \"\",\n            \"total_rules\": 339,\n            \"controls\": 75,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1386\",\n            \"name\": \"GDPR\",\n            \"description\": \"The General Data Protection Regulation (GDPR) is a European Union regulation on information privacy in the European Union and the European Economic Area. The objective of the GDPR is to ensure the protection of personal information through a human rights-centric approach and allow secure transfer of personal information within and across jurisdictions. Effective from 25 May 2018, the GDPR imposes obligations onto organizations anywhere, so long as they target or collect data related to people in the EU.\",\n            \"domain\": \"\",\n            \"total_rules\": 384,\n            \"controls\": 78,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1446\",\n            \"name\": \"ISO/IEC 27001:2022\",\n            \"description\": \"ISO/IEC 27001 is the world's best-known standard for information security management systems (ISMS). It defines requirements an ISMS must meet. The ISO/IEC 27001 standard provides companies of any size and from all sectors of activity with guidance for establishing, implementing, maintaining and continually improving an information security management system. Conformity with ISO/IEC 27001 means that an organization or business has put in place a system to manage risks related to the security of data owned or handled by the company, and that this system respects all the best practices and principles enshrined in this International Standard.\",\n            \"domain\": \"\",\n            \"total_rules\": 389,\n            \"controls\": 87,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1595\",\n            \"name\": \"CDMC\",\n            \"description\": \"Cloud Data Management Capabilities (CDMC) is a framework of best practices for companies that are migrating to or adopting cloud services. The framework enables organizations to securely migrate to cloud/hybrid cloud or multi-cloud environments, better protect their sensitive data, and leverage automation for improved cloud data management. It lays out how companies can establish clear accountability, controls, and governance around the broad spectrum of data and assets that exists within their cloud infrastructure.\",\n            \"domain\": \"\",\n            \"total_rules\": 244,\n            \"controls\": 63,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1628\",\n            \"name\": \"CCPA\",\n            \"description\": \"The California Consumer Privacy Act of 2018 (CCPA) is the first US state comprehensive privacy law. CCPA gives consumers certain rights over the personal information businesses collect about them and requires businesses to inform consumers about how they collect, use, and retain their personal information.\\n\\nIn 2020, the California Privacy Rights Act (CPRA), also known as Proposition 24, amended the CCPA by adding additional consumer privacy rights and obligations for businesses. It also established the California Privacy Protection Agency (CPPA) and tasked it with responsibilities including implementing and enforcing the law and educating the public on their rights and obligations under the law. The CPRA amended the CCPA; it did not create a separate, new law. The CPRA amendments to the CCPA went into effect on January 1, 2023.\",\n            \"domain\": \"\",\n            \"total_rules\": 376,\n            \"controls\": 63,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1738\",\n            \"name\": \"Australian Privacy Principles\",\n            \"description\": \"The Australian Privacy Principles (APP) are the basis of the 1988 Australian Privacy Act, which was significantly amended in the year 2000.\\n\\nAPP is a privacy framework that applies to Australian government organizations, organizations that provide health services, and any private sector organization generating an annual revenue of over $3 million. This includes organizations outside Australia that store or process data of Australian citizens.\\nThere are 13 privacy principles that set standards, rights and obligations, including:\\n\\n* The collection, disclosure, and usage of personal data\\n* Governance and responsibilities requirements\\n* Integrity of personal information\\n* An individual’s right to access personal information\\n\\nThe Australian Privacy Principles are principles-based law. This gives an organisation or agency flexibility to tailor their personal information handling practices to their business models and the diverse needs of individuals. They are also technology neutral, which allows them to adapt to changing technologies.\",\n            \"domain\": \"\",\n            \"total_rules\": 22,\n            \"controls\": 29,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1816\",\n            \"name\": \"CPS 234\",\n            \"description\": \"This Prudential Standard aims to ensure that an APRA-regulated entity takes measures to be resilient against information security incidents (including cyberattacks) by maintaining an information security capability commensurate with information security vulnerabilities and threats.\",\n            \"domain\": \"\",\n            \"total_rules\": 46,\n            \"controls\": 20,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1853\",\n            \"name\": \"Singapore Model Artificial Intelligence Governance Framework\",\n            \"description\": \"The Personal Data Protection Commission of Singapore published the second edition of their Model AI Governance Framework, which provides guidance to private sector organizations to address governance issues when using artificial intelligence solutions.\",\n            \"domain\": \"\",\n            \"total_rules\": 35,\n            \"controls\": 35,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"1f53c373-114f-41be-8d35-f94285b7d1b6\",\n            \"name\": \"Naim FW US Prod - Super SU...\",\n            \"description\": \"... updated\",\n            \"domain\": \"\",\n            \"total_rules\": 1,\n            \"controls\": 1,\n            \"org_unit_id\": 0,\n            \"created_at\": 1724246802387,\n            \"created_by\": 796,\n            \"modified_at\": 1724247595361,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"2\",\n            \"name\": \"SOC2 Type 2\",\n            \"description\": \"SOC 2 defines criteria for managing customer data based on five “trust service principles”—security, availability, processing integrity, confidentiality and privacy.\",\n            \"domain\": \"\",\n            \"total_rules\": 357,\n            \"controls\": 69,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"2314\",\n            \"name\": \"EU AI ACT\",\n            \"description\": \"The European Union Artificial Intelligence Act (EU AI Act) is a comprehensive regulation that governs the development, deployment, and use of artificial intelligence (AI) systems. The scope of the EU AI Act does not only extend to entities operating with the EU but may also cover the entities operating in third countries and placing AI systems on the EU market or where the output of their AI systems is used in the EU.\",\n            \"domain\": \"\",\n            \"total_rules\": 82,\n            \"controls\": 60,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"246\",\n            \"name\": \"ISO/IEC 27001:2013\",\n            \"description\": \"ISO/IEC 27001 is the world's best-known standard for information security management systems (ISMS). It defines requirements an ISMS must meet. The ISO/IEC 27001 standard provides companies of any size and from all sectors of activity with guidance for establishing, implementing, maintaining and continually improving an information security management system. Conformity with ISO/IEC 27001 means that an organization or business has put in place a system to manage risks related to the security of data owned or handled by the company, and that this system respects all the best practices and principles enshrined in this International Standard.\",\n            \"domain\": \"\",\n            \"total_rules\": 371,\n            \"controls\": 75,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"2504\",\n            \"name\": \"NIST 800-53\",\n            \"description\": \"This publication provides a catalog of security and privacy controls for information systems and organizations to protect organizational operations and assets, individuals, other organizations, and the Nation from a diverse set of threats and risks, including hostile attacks, human errors, natural disasters, structural failures, foreign intelligence entities, and privacy risks. The controls are flexible and customizable and implemented as part of an organization-wide process to manage risk. The controls address diverse requirements derived from mission and business needs, laws, executive orders, directives, regulations, policies, standards, and guidelines.\",\n            \"domain\": \"\",\n            \"total_rules\": 782,\n            \"controls\": 470,\n            \"org_unit_id\": 0,\n            \"created_at\": 1755028186444,\n            \"created_by\": 0,\n            \"modified_at\": 1755028186444,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"2525\",\n            \"name\": \"NIST CSF 2.0\",\n            \"description\": \"The NIST Cybersecurity Framework (CSF) 2.0 provides guidance to industry, government agencies, and other organizations to manage cybersecurity risks. It offers a taxonomy of high level cybersecurity outcomes that can be used by any organization — regardless of its size, sector, or maturity — to better understand, assess, prioritize, and communicate its cybersecurity efforts.\",\n            \"domain\": \"\",\n            \"total_rules\": 315,\n            \"controls\": 66,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"29d585f0-e1bf-4c06-8900-42a15a0db959\",\n            \"name\": \"updated Module Owner FW US\",\n            \"description\": \"....\",\n            \"domain\": \"\",\n            \"total_rules\": 1,\n            \"controls\": 1,\n            \"org_unit_id\": 0,\n            \"created_at\": 1724318202819,\n            \"created_by\": 800,\n            \"modified_at\": 1724318308902,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"304\",\n            \"name\": \"ISO 27701\",\n            \"description\": \"This document specifies requirements and provides guidance for establishing, implementing, maintaining and continually improving a Privacy Information Management System (PIMS) in the form of an extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy management within the context of the organization.\\n\\nThis document specifies PIMS-related requirements and provides guidance for PII controllers and PII processors holding responsibility and accountability for PII processing.\\n\\nThis document is applicable to all types and sizes of organizations, including public and private companies, government entities and not-for-profit organizations, which are PII controllers and/or PII processors processing PII within an ISMS.\",\n            \"domain\": \"\",\n            \"total_rules\": 387,\n            \"controls\": 100,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"308\",\n            \"name\": \"NIST AI RMF\",\n            \"description\": \"The U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has released its Artificial Intelligence Risk Management Framework (AI RMF 1.0), a guidance document for voluntary use by organizations designing, developing, deploying or using AI systems to help manage the many risks of AI technologies.\",\n            \"domain\": \"\",\n            \"total_rules\": 109,\n            \"controls\": 70,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\",\n            \"name\": \"Sample Compliance Framework of Securiti\",\n            \"description\": \"Sample Description of the Framework\",\n            \"domain\": \"\",\n            \"total_rules\": 0,\n            \"controls\": 0,\n            \"org_unit_id\": 0,\n            \"created_at\": 1784549020215,\n            \"created_by\": 1310,\n            \"modified_at\": 1784549596256,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"3319\",\n            \"name\": \"ISO 42001\",\n            \"description\": \"Developed by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC), ISO 42001 specifies the requirements and provides guidance for establishing, implementing, maintaining, and continually improving an Artificial Intelligence (AI) management system within the context of an organization. It is intended for use by an organization providing or using products or services that utilize AI systems. ISO 42001 is intended to help the organizations develop, provide, or use AI systems responsibly in pursuing their objectives and meet applicable requirements, and obligations related to interested parties and expectations from them.\",\n            \"domain\": \"\",\n            \"total_rules\": 67,\n            \"controls\": 75,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"347a0373-78d8-471d-a6a3-fc4e5d53a38e\",\n            \"name\": \"FW Operator US updated\",\n            \"description\": \"updated fw\",\n            \"domain\": \"\",\n            \"total_rules\": 3,\n            \"controls\": 1,\n            \"org_unit_id\": 0,\n            \"created_at\": 1724310673074,\n            \"created_by\": 798,\n            \"modified_at\": 1724310809713,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"3778\",\n            \"name\": \"Securiti's Data Security Framework\",\n            \"description\": \"Custom framework from Securiti with focus on Data Security\",\n            \"domain\": \"\",\n            \"total_rules\": 397,\n            \"controls\": 59,\n            \"org_unit_id\": 0,\n            \"created_at\": 1733876737574,\n            \"created_by\": 0,\n            \"modified_at\": 1733876737574,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"3846\",\n            \"name\": \"EU DORA\",\n            \"description\": \"The EU DORA requires financial entities to ensure digital operational resilience and implement an effective information and communication technology (ICT) risk management framework, mechanisms and policies for handling all ICT-related incidents, and for reporting major ICT-related incidents, testing of ICT systems, controls, and processes, as well as for managing ICT third-party risk. \\n\\n\\n\\nThe EU DORA applies to the following financial entities: \\n\\n(a) credit institutions, \\n\\n(b) payment institutions, including payment institutions exempted pursuant to Directive (EU) 2015/2366 (Payment Services Directive), \\n\\n(c) account information service providers, \\n\\n(d) electronic money institutions, including electronic money institutions exempted pursuant to Directive 2009/110/EC (Taking up, pursuit and prudential supervision of the business of electronic money institutions amending Directives and repealing Directive); \\n\\n(e) investment firms; \\n\\n(f) crypto-asset service providers as authorised under a Regulation of the European Parliament and of the Council on markets in crypto assets, and amending Regulations (EU) No 1093/2010 and (EU) No 1095/2010 and Directives 2013/36/EU and (EU) 2019/1937 (‘the Regulation on markets in crypto-assets’) and issuers of asset-referenced tokens; \\n\\n(g) central securities depositories; \\n\\n(h) central counterparties; \\n\\n(i) trading venues; \\n\\n(j) trade repositories; \\n\\n(k) managers of alternative investment funds; \\n\\n(l) management companies; \\n\\n(m) data reporting service providers; \\n\\n(n) insurance and reinsurance undertakings; \\n\\n(o) insurance intermediaries, reinsurance intermediaries and ancillary insurance intermediaries; \\n\\n(p) institutions for occupational retirement provision; \\n\\n(q) credit rating agencies; \\n\\n(r) administrators of critical benchmarks; \\n\\n(s) crowdfunding service providers; \\n\\n(t) securitisation repositories; \\n\\n(u) ICT third-party service providers. \\n\\n\\n\\nThe EU DORA does not apply to the following: \\n\\n(a) managers of alternative investment funds as referred to in Article 3(2) of Directive 2011/61/EU (Alternative Investment Fund Managers and amending Directives); \\n\\n(b) insurance and reinsurance undertakings as referred to in Article 4 of Directive 2009/138/EC (Taking-up and pursuit of the business of Insurance and Reinsurance Solvency II); \\n\\n(c) institutions for occupational retirement provision which operate pension schemes which together do not have more than 15 members in total; \\n\\n(d) natural or legal persons exempted pursuant to Articles 2 and 3 of Directive 2014/65/EU (Markets in financial instruments and amending Directive); \\n\\n(e) insurance intermediaries, reinsurance intermediaries and ancillary insurance intermediaries which are microenterprises or small or medium-sized enterprises; \\n\\n(f) post office giro institutions as referred to in Article 2(5), point (3), of Directive 2013/36/EU (Access to the activity of credit institutions and the prudential supervision of credit institutions and investment firms)\",\n            \"domain\": \"\",\n            \"total_rules\": 215,\n            \"controls\": 63,\n            \"org_unit_id\": 0,\n            \"created_at\": 1729210465521,\n            \"created_by\": 0,\n            \"modified_at\": 1729210465521,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"3927\",\n            \"name\": \"Colorado AI Act\",\n            \"description\": \"The Colorado AI Act focuses on the development and deployment of “high-risk” AI systems and their potential to cause algorithmic discrimination. It creates duties for developers and deployers to use reasonable care to avoid algorithmic discrimination via high-risk AI systems. \\n\\nAlgorithmic discrimination is defined as any condition in which the use of an AI system results in an unlawful differential treatment or impact that disfavors an individual or group of individuals on the basis of their actual or perceived age, color, disability, ethnicity, genetic information, limited proficiency in the English language, national origin, race, religion, reproductive health, sex, veteran status or other classification protected under the laws of Colorado or federal law.\\n\\nA “high-risk” AI system is defined as any system that, when deployed, makes or is a substantial factor in making a “consequential decision”; namely, a decision that has a material effect on the provision or cost of:\\n\\n* education enrollment or an education opportunity,\\n* employment or an employment opportunity,\\n* a financial or lending service,\\n* an essential government service,\\n* health care services,\\n* housing,\\n* insurance, or\\n* a legal service.\\n\\nThe law contains general duties for both deployers and developers of high-risk AI systems. \\n\\n* A “developer” refers to an individual or entity doing business in Colorado that develops or intentionally and substantially modifies a high-risk AI system. \\n* A “deployer” refers to an individual or entity doing business in Colorado that deploys a high-risk AI system.\\n\\nDeployers that meet the following criteria are exempt from the law, other than the requirement to notify consumers that a consequential decision was made about them using a high-risk AI system:\\n\\n* The deployer employs less than 50 people.\\n* The deployer does not use its own data to train the system.\\n* The system deployed is used for its intended purpose (as specified by the developer and required under the law).\\n* The deployer makes available to consumers the impact assessment provided by the developer.\\n\\nThere are also exemptions for systems that have been approved by a federal agency, entities subject to the Health Insurance Portability and Accountability Act and certain other entities that are subject to existing laws and regulations.\\n\\nThe law will go into effect on 1 February 2026.\",\n            \"domain\": \"\",\n            \"total_rules\": 34,\n            \"controls\": 38,\n            \"org_unit_id\": 0,\n            \"created_at\": 1731024715697,\n            \"created_by\": 0,\n            \"modified_at\": 1731024715697,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"4125\",\n            \"name\": \"CN PIPL\",\n            \"description\": \"The Personal Information Protection Law (PIPL) of China, enacted to safeguard personal information rights, regulates how personal information is processed, ensuring that data privacy is protected within China. It came into force on November 1, 2021.\\n\\nThe PIPL applies to:\\n\\n# *Personal Information Processors*: Organizations or individuals that determine the purposes and methods of personal information processing.\\n# *Territorial Application*: It applies to the processing of personal information within China and, in specific circumstances, to the processing outside China involving individuals within its territory. Such circumstances include offering products or services to individuals in China, analyzing or evaluating behaviors within China, and other instances prescribed by law.\\n\\nCertain activities, like processing for household purposes or under other specific laws, are exempt from the PIPL.\\n\\nThe Cyberspace Administration of China (CAC) is responsible for enforcing the PIPL. \\n\\nViolations may result in fines up to RMB 50 million or 5% of annual turnover, penalties for individuals up to RMB 1 million, business suspension, permit revocation, and public disclosure of offenses.\",\n            \"domain\": \"\",\n            \"total_rules\": 217,\n            \"controls\": 68,\n            \"org_unit_id\": 0,\n            \"created_at\": 1750897083455,\n            \"created_by\": 0,\n            \"modified_at\": 1750897083455,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"4215\",\n            \"name\": \"KSA PDPL\",\n            \"description\": \"The Personal Data Protection Law (PDPL) is a legislative framework in the Kingdom of Saudi Arabia (KSA) that regulates the processing of personal data. It has been effective since September 14, 2023, and applies to entities inside KSA and to foreign entities processing personal data of individuals residing in KSA. This includes data of the deceased if it can identify them or a family member. Certain processing activities are exempt, such as those for personal or household purposes.\\n\\nThe PDPL provides fines of up to SAR 5,000,000 for breach of its provisions.\",\n            \"domain\": \"\",\n            \"total_rules\": 99,\n            \"controls\": 47,\n            \"org_unit_id\": 0,\n            \"created_at\": 1746575630926,\n            \"created_by\": 0,\n            \"modified_at\": 1746575630926,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"4316\",\n            \"name\": \"UAE PDPL\",\n            \"description\": \"The UAE’s Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data (PDPL) governs the processing of personal data using wholly or partly automated means, or by any other means, by data controllers or processors based in the UAE. It also applies to entities outside the UAE that process the personal data of UAE residents.\\n\\nThe PDPL came into effect on 2 January 2022.\",\n            \"domain\": \"\",\n            \"total_rules\": 382,\n            \"controls\": 73,\n            \"org_unit_id\": 0,\n            \"created_at\": 1750897083455,\n            \"created_by\": 0,\n            \"modified_at\": 1750897083455,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"43e20c3f-7b78-4be9-b562-fb84db7d9dff\",\n            \"name\": \"RBAC V2 Framework - Manage Compliance - Updated\",\n            \"description\": \"\",\n            \"domain\": \"\",\n            \"total_rules\": 1,\n            \"controls\": 1,\n            \"org_unit_id\": 0,\n            \"created_at\": 1759488834905,\n            \"created_by\": 1363,\n            \"modified_at\": 1759488916371,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"4497\",\n            \"name\": \"India DPDPA\",\n            \"description\": \"The Digital Personal Data Protection Act, 2023 (DPDPA) is India's comprehensive data privacy legislation, enacted on August 11, 2023. It governs the processing of digital personal data within India and applies to entities outside India if they offer goods or services to individuals in India. \\n\\nIt introduces obligations for data fiduciaries, rights for data principals, and prescribes significant penalties—up to ₹250 crore—for non-compliance, including for data breaches, failure to protect children's data, and lack of safeguards.\",\n            \"domain\": \"\",\n            \"total_rules\": 93,\n            \"controls\": 35,\n            \"org_unit_id\": 0,\n            \"created_at\": 1755028186444,\n            \"created_by\": 0,\n            \"modified_at\": 1755028186444,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"475\",\n            \"name\": \"PCI DSS 4.0.1\",\n            \"description\": \"PCI Data Security Standard (PCI DSS) is a global standard that provides a baseline of technical and operational requirements designed to protect account data.\",\n            \"domain\": \"\",\n            \"total_rules\": 431,\n            \"controls\": 122,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5304\",\n            \"name\": \"Cloud Computing Compliance Controls Catalogue (C5)\",\n            \"description\": \"The C5 (Cloud Computing Compliance Controls Catalogue) is a German standard for cloud security, developed by the BSI (German Federal Office for Information Security). It's widely adopted by both government agencies and private businesses, and acts as a baseline for auditing cloud service providers. \\n\\nThe C5 framework is based on internationally recognized standards such as ISO/IEC 27001, the Cloud Security Alliance Cloud Controls Matrix (CSA CCM), and BSI's IT-Grundschutz Catalogues.\",\n            \"domain\": \"\",\n            \"total_rules\": 401,\n            \"controls\": 115,\n            \"org_unit_id\": 0,\n            \"created_at\": 1756936652529,\n            \"created_by\": 0,\n            \"modified_at\": 1756936652529,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5558\",\n            \"name\": \"RIIO-3 Data Best Practice Guidance\",\n            \"description\": \"The [RIIO-3 Data Best Practice Guidance|https://www.ofgem.gov.uk/sites/default/files/2025-06/Data-Best-Practice-Guidance-v3.5.pdf] is a core component of the Digitalisation Licence Condition applicable to network operators regulated under the RIIO-3 framework. It establishes enforceable obligations requiring regulated network operators to put in place appropriate governance arrangements, processes, and measures to manage, maintain, and share data effectively. These obligations apply to UK Electricity Transmission (ET), Gas Distribution (GD), and Gas Transmission (GT) licensees for the 2026–2031 control period, with non-compliance potentially leading to Ofgem investigations and enforcement action, including financial penalties of up to 10% of annual turnover, as set out in [Ofgem’s Enforcement Guidelines|https://www.ofgem.gov.uk/energy-regulation/how-we-regulate/compliance-and-enforcement/enforcement?utm_].\",\n            \"domain\": \"\",\n            \"total_rules\": 13,\n            \"controls\": 14,\n            \"org_unit_id\": 0,\n            \"created_at\": 1768969032958,\n            \"created_by\": 0,\n            \"modified_at\": 1768969032958,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5633\",\n            \"name\": \"NYDFS Cybersecurity Regulation\",\n            \"description\": \"The NYDFS Cybersecurity Regulation (23 NYCRR 500) is New York's strict rule for financial entities to protect systems & nonpublic data. The law requires a robust program based on NIST, including annual risk assessments, CISO appointment, MFA, incident response plans, and mandatory annual certification.\",\n            \"domain\": \"\",\n            \"total_rules\": 264,\n            \"controls\": 78,\n            \"org_unit_id\": 0,\n            \"created_at\": 1768969032958,\n            \"created_by\": 0,\n            \"modified_at\": 1768969032958,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5681\",\n            \"name\": \"Malaysia PDPA\",\n            \"description\": \"Malaysia’s Personal Data Protection Act 2010 (PDPA) applies to any person or organization that processes, controls, or authorizes the processing of personal data in the course of commercial transactions, including both data users and data processors. It covers persons established in Malaysia, such as individuals residing at least 180 days a year, locally incorporated companies, partnerships, or entities with offices or regular business activities in the country, regardless of where the data is processed. The Act also applies to foreign entities that are not established in Malaysia but use equipment located in Malaysia to process personal data, except for mere data transit, and such entities must appoint a local representative. Overall, the PDPA ensures that businesses with a sufficient operational or technological connection to Malaysia comply with its data protection obligations.\",\n            \"domain\": \"\",\n            \"total_rules\": 309,\n            \"controls\": 61,\n            \"org_unit_id\": 0,\n            \"created_at\": 1773781282388,\n            \"created_by\": 0,\n            \"modified_at\": 1773781282388,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5796\",\n            \"name\": \"OSFI Canada Guideline B-13\",\n            \"description\": \"Technology and Cyber Risk Management Guideline sets out OSFI's expectations for managing technology and cyber risks at all federally regulated financial institutions in Canada (banks, foreign bank and insurance branches, life and P&C insurers, and trust and loan companies). It is organized around three domains: \\n\\n(1) *Governance and Risk Management*: accountability, strategy, and a risk management framework; \\n\\n(2) *Technology Operations and Resilience*: architecture, asset management, SDLC, change and patch management, incident management, service monitoring, and disaster recovery; and \\n\\n(3) *Cyber Security*: identifying, defending against, detecting, and responding to cyber threats.\\n\\nThe Framework is applied on a risk-based basis, proportional to each institution's size, nature, scope, complexity of operations, and risk profile.\",\n            \"domain\": \"\",\n            \"total_rules\": 263,\n            \"controls\": 122,\n            \"org_unit_id\": 0,\n            \"created_at\": 1783734751185,\n            \"created_by\": 0,\n            \"modified_at\": 1783734751185,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5882\",\n            \"name\": \"Chile's Law No. 21.719\",\n            \"description\": \"Law No. 21.719 regulates the protection and processing of personal data in Chile. Published on December 13, 2024 and entering into force on December 1, 2026, it replaces the former Law No. 19.628. The law establishes principles for lawful processing, data subject rights, controller and processor obligations, rules for sensitive data, international transfer mechanisms, and creates the Agencia de Protección de Datos Personales (APDP) as the independent supervisory authority. Non-compliance is subject to a tiered administrative sanctions regime enforced by the APDP.\",\n            \"domain\": \"\",\n            \"total_rules\": 133,\n            \"controls\": 49,\n            \"org_unit_id\": 0,\n            \"created_at\": 1783734751185,\n            \"created_by\": 0,\n            \"modified_at\": 1783734751185,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5963\",\n            \"name\": \"Quebec Law 25\",\n            \"description\": \"The Act Respecting the Protection of Personal Information in the Private Sector (chapter P-39.1), commonly known as Quebec Law 25, governs the collection, use, communication, retention and destruction of personal information by persons carrying on an enterprise in Quebec. The law establishes governance and accountability obligations, consent requirements, transparency duties, data subject rights including a right to de-indexing, breach notification obligations, privacy impact assessment requirements, and a registration regime for personal information agents. It is enforced by the Commission d'acces a l'information, with monetary administrative penalties and penal sanctions for non-compliance.\",\n            \"domain\": \"\",\n            \"total_rules\": 162,\n            \"controls\": 72,\n            \"org_unit_id\": 0,\n            \"created_at\": 1784862066211,\n            \"created_by\": 0,\n            \"modified_at\": 1784862066211,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"5964\",\n            \"name\": \"NIST Privacy Framework\",\n            \"description\": \"The NIST Privacy Framework is a voluntary tool developed by the National Institute of Standards and Technology to help organizations improve their privacy posture through enterprise risk management. Published on January 16, 2020, the framework is technology-neutral and applicable to organizations of all sizes, sectors, and roles within the data processing ecosystem. It provides a common language and structured approach for organizations to manage privacy risks arising from data processing across the complete data life cycle, helping them build customer trust, fulfill compliance obligations, and facilitate communication about privacy practices.\",\n            \"domain\": \"\",\n            \"total_rules\": 302,\n            \"controls\": 144,\n            \"org_unit_id\": 0,\n            \"created_at\": 1784862066211,\n            \"created_by\": 0,\n            \"modified_at\": 1784862066211,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"67d4edda-9076-49c8-a631-313c9344d9f5\",\n            \"name\": \"137\",\n            \"description\": \"\",\n            \"domain\": \"\",\n            \"total_rules\": 2,\n            \"controls\": 1,\n            \"org_unit_id\": 0,\n            \"created_at\": 1759472001579,\n            \"created_by\": 336,\n            \"modified_at\": 1759472001579,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"6b9ebbb9-7097-4715-ad14-0952d96543c7\",\n            \"name\": \"Sample Framework\",\n            \"description\": \"Sample Des\",\n            \"domain\": \"\",\n            \"total_rules\": 0,\n            \"controls\": 0,\n            \"org_unit_id\": 0,\n            \"created_at\": 1784548851032,\n            \"created_by\": 1310,\n            \"modified_at\": 1784549440790,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"708\",\n            \"name\": \"PCI DSS 3.2.1\",\n            \"description\": \"The Payment Card Industry Data Security Standard (PCI DSS) is a security standard formed in 2004 by Visa, MasterCard, Discover Financial Services, JCB International and American Express.\\n\\nPCI DSS lists set of security requirements to be implemented by organizations which process, store or transmit credit card data.\",\n            \"domain\": \"\",\n            \"total_rules\": 364,\n            \"controls\": 93,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"76533c88-1bf2-46e6-95ee-e3de33965959\",\n            \"name\": \"my cool framework\",\n            \"description\": \"my cool framework\",\n            \"domain\": \"\",\n            \"total_rules\": 0,\n            \"controls\": 0,\n            \"org_unit_id\": 0,\n            \"created_at\": 1755843895936,\n            \"created_by\": 336,\n            \"modified_at\": 1755843895936,\n            \"status\": true,\n            \"is_system_defined\": false\n        },\n        {\n            \"id\": \"980\",\n            \"name\": \"HIPAA\",\n            \"description\": \"The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient's consent or knowledge.\",\n            \"domain\": \"\",\n            \"total_rules\": 350,\n            \"controls\": 56,\n            \"org_unit_id\": 0,\n            \"created_at\": 1725594480302,\n            \"created_by\": 0,\n            \"modified_at\": 1725594480302,\n            \"status\": true,\n            \"is_system_defined\": true\n        },\n        {\n            \"id\": \"b5672fe2-74d2-4f92-bca8-4feacfdba0c8\",\n            \"name\": \"Automation_Framework_PtdDNwckxd\",\n            \"description\": \"lOiNqqBDlH This is Compliance entity description\",\n            \"domain\": \"\",\n            \"total_rules\": 1,\n            \"controls\": 1,\n            \"org_unit_id\": 0,\n            \"created_at\": 1761287607984,\n            \"created_by\": 336,\n            \"modified_at\": 1761287607984,\n            \"status\": true,\n            \"is_system_defined\": false\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Framework ",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Sample Compliance Framework\",\n    \"description\": \"Sample Description of the Framework \",\n    \"domain\": \"\",\n    \"categories\": [\n        {\n            \"id\": \"1596\",\n            \"action\": \"link\"\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/framework",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "framework"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Create Framework",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Sample Compliance Framework\",\n    \"description\": \"Sample Description of the Framework \",\n    \"domain\": \"\",\n    \"categories\": [\n        {\n            \"id\": \"1596\",\n            \"action\": \"link\"\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/framework",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "framework"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Mon, 20 Jul 2026 12:03:40 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99989"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1784549073"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Create request completed successfully\",\n    \"data\": {\n        \"created_by\": 1234,\n        \"modified_by\": 1234,\n        \"created_at\": 1784549020215,\n        \"modified_at\": 1784549020215,\n        \"tenant_id\": \"xxx-xxx-xxx-xxxx\",\n        \"org_unit_id\": null,\n        \"id\": \"xxx-xxxx-xxxx-xxxx-xxxxx\",\n        \"name\": \"Sample Compliance Framework\",\n        \"description\": \"Sample Description of the Framework\",\n        \"domain\": \"\",\n        \"is_system_defined\": false,\n        \"owner\": {\n            \"created_by\": 0,\n            \"modified_by\": 0,\n            \"created_at\": 0,\n            \"modified_at\": 0,\n            \"tenant_id\": \"\",\n            \"id\": 1234,\n            \"is_active\": false,\n            \"user_name\": \"\",\n            \"email\": \"\",\n            \"first_name\": \"\",\n            \"middle_name\": \"\",\n            \"last_name\": \"\",\n            \"full_name\": \"\",\n            \"nickname\": \"\",\n            \"office\": \"\",\n            \"location\": \"\",\n            \"join_date\": \"\",\n            \"groups\": null,\n            \"roles\": null,\n            \"mfa\": null,\n            \"user_groups\": null,\n            \"user_roles\": null,\n            \"cell_phone\": \"\",\n            \"photo_url\": \"\",\n            \"time_zone\": \"\",\n            \"last_login\": 0,\n            \"messaging_id\": \"\",\n            \"is_support_user\": false,\n            \"user_type\": 0,\n            \"role_ids\": null,\n            \"group_ids\": null,\n            \"ad_guid\": \"\",\n            \"is_locked\": false,\n            \"status\": \"\",\n            \"access_profile_id\": 0,\n            \"source\": \"\",\n            \"message_digest\": 0,\n            \"deleted_by\": 0,\n            \"created_by_deleted_user\": 0\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Framework ",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Sample Compliance Framework of Securiti\",\n    \"description\": \"Sample Description of the Framework\",\n    \"id\": \"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/:frameworkID",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "framework",
+            ":frameworkID"
+          ],
+          "variable": [
+            {
+              "key": "frameworkID",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Update Framework",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Sample Compliance Framework of Securiti\",\n    \"description\": \"Sample Description of the Framework\",\n    \"id\": \"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/:frameworkID",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "framework",
+                ":frameworkID"
+              ],
+              "variable": [
+                {
+                  "key": "frameworkID",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Mon, 20 Jul 2026 12:13:16 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "100000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "99990"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1784549982"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Update request completed successfully\",\n    \"data\": {\n        \"created_by\": 1234,\n        \"modified_by\": 1234,\n        \"created_at\": 1784549020215,\n        \"modified_at\": 1784549596256,\n        \"tenant_id\": \"xxx-xxx-xxx-xxxx\",\n        \"org_unit_id\": null,\n        \"id\": \"xxx-xxxx-xxxx-xxxx-xxxxx\",\n        \"name\": \"Sample Compliance Framework of Securiti\",\n        \"description\": \"Sample Description of the Framework\",\n        \"domain\": \"\",\n        \"is_system_defined\": false,\n        \"owner\": {\n            \"created_by\": 0,\n            \"modified_by\": 0,\n            \"created_at\": 0,\n            \"modified_at\": 0,\n            \"tenant_id\": \"\",\n            \"id\": 1234,\n            \"is_active\": false,\n            \"user_name\": \"\",\n            \"email\": \"\",\n            \"first_name\": \"\",\n            \"middle_name\": \"\",\n            \"last_name\": \"\",\n            \"full_name\": \"\",\n            \"nickname\": \"\",\n            \"office\": \"\",\n            \"location\": \"\",\n            \"join_date\": \"\",\n            \"groups\": null,\n            \"roles\": null,\n            \"mfa\": null,\n            \"user_groups\": null,\n            \"user_roles\": null,\n            \"cell_phone\": \"\",\n            \"photo_url\": \"\",\n            \"time_zone\": \"\",\n            \"last_login\": 0,\n            \"messaging_id\": \"\",\n            \"is_support_user\": false,\n            \"user_type\": 0,\n            \"role_ids\": null,\n            \"group_ids\": null,\n            \"ad_guid\": \"\",\n            \"is_locked\": false,\n            \"status\": \"\",\n            \"access_profile_id\": 0,\n            \"source\": \"\",\n            \"message_digest\": 0,\n            \"deleted_by\": 0,\n            \"created_by_deleted_user\": 0\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Duplicate Framework ",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"framework_id\": \"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\",\n    \"category_id\": \"19aa4739-d94b-4127-9856-8398b535db4f\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/category/duplicate",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "category",
+            "duplicate"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Duplicate Framework",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"framework_id\": \"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\",\n    \"category_id\": \"19aa4739-d94b-4127-9856-8398b535db4f\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/category/duplicate",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "category",
+                "duplicate"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Mon, 03 Aug 2026 11:54:24 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Create request completed successfully\",\n    \"data\": {\n        \"created_by\": 1234,\n        \"modified_by\": 1234,\n        \"created_at\": 1785758064939,\n        \"modified_at\": 1785758064939,\n        \"tenant_id\": \"xxx-xxx-xxx-xxxx\",\n        \"org_unit_id\": null,\n        \"id\": \"xxx-xxxx-xxxx-xxxx-xxxxx\",\n        \"name\": \"1. Governance & Accountability (2)\",\n        \"description\": \"\",\n        \"order_num\": 1,\n        \"is_system_defined\": false,\n        \"owner\": {\n            \"created_by\": 0,\n            \"modified_by\": 0,\n            \"created_at\": 0,\n            \"modified_at\": 0,\n            \"tenant_id\": \"\",\n            \"id\": 1234,\n            \"is_active\": false,\n            \"user_name\": \"\",\n            \"email\": \"\",\n            \"first_name\": \"\",\n            \"middle_name\": \"\",\n            \"last_name\": \"\",\n            \"full_name\": \"\",\n            \"nickname\": \"\",\n            \"office\": \"\",\n            \"location\": \"\",\n            \"join_date\": \"\",\n            \"groups\": null,\n            \"roles\": null,\n            \"mfa\": null,\n            \"user_groups\": null,\n            \"user_roles\": null,\n            \"cell_phone\": \"\",\n            \"photo_url\": \"\",\n            \"time_zone\": \"\",\n            \"last_login\": 0,\n            \"messaging_id\": \"\",\n            \"is_support_user\": false,\n            \"user_type\": 0,\n            \"role_ids\": null,\n            \"group_ids\": null,\n            \"ad_guid\": \"\",\n            \"is_locked\": false,\n            \"status\": \"\",\n            \"access_profile_id\": 0,\n            \"source\": \"\",\n            \"message_digest\": 0,\n            \"deleted_by\": 0,\n            \"created_by_deleted_user\": 0\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Disable Framework ",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"framework_id\":\"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/toggle_framework/disable",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "framework",
+            "toggle_framework",
+            "disable"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Disable Framework",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"framework_id\":\"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/toggle_framework/disable",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "framework",
+                "toggle_framework",
+                "disable"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Mon, 03 Aug 2026 12:08:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Update request completed successfully\",\n    \"data\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Enable Framework ",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"framework_id\":\"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/toggle_framework/enable",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "framework",
+            "toggle_framework",
+            "enable"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Enable Framework",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"framework_id\":\"31ebbe70-3030-438f-9b4e-af1c3cf9ecc3\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/toggle_framework/enable",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "framework",
+                "toggle_framework",
+                "enable"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Mon, 03 Aug 2026 12:10:37 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Update request completed successfully\",\n    \"data\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Framework Projects",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"source\": \"compliance_project\",\n    \"skip_cache\": true,\n    \"distinct\": true,\n    \"response_config\": {\n        \"format\": 1\n    },\n    \"fields\": [\n        {\n            \"name\": \"framework_id\",\n            \"type\": \"function\",\n            \"options\": {\n                \"function\": \"convert_text\",\n                \"alias\": \"framework_id\"\n            }\n        }\n    ],\n    \"filter\": {\n        \"op\": \"eq\",\n        \"field\": \"id\",\n        \"value\": \"c4701ae4-2c0c-4e6e-a2b3-eb0c766cd5a8\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host-url}}/reporting/v1/sources/query",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "reporting",
+            "v1",
+            "sources",
+            "query"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Get Framework Projects",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"source\": \"compliance_project\",\n    \"skip_cache\": true,\n    \"distinct\": true,\n    \"response_config\": {\n        \"format\": 1\n    },\n    \"fields\": [\n        {\n            \"name\": \"framework_id\",\n            \"type\": \"function\",\n            \"options\": {\n                \"function\": \"convert_text\",\n                \"alias\": \"framework_id\"\n            }\n        }\n    ],\n    \"filter\": {\n        \"op\": \"eq\",\n        \"field\": \"id\",\n        \"value\": \"c4701ae4-2c0c-4e6e-a2b3-eb0c766cd5a8\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host-url}}/reporting/v1/sources/query",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "reporting",
+                "v1",
+                "sources",
+                "query"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Tue, 04 Aug 2026 12:03:47 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-encoding",
+              "value": "gzip"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Request completed successfully\",\n    \"data\": [\n        {\n            \"framework_id\": \"43e20c3f-7b78-4be9-b562-fb84db7d9dff\"\n        }\n    ],\n    \"meta_info\": {\n        \"total_rows\": 0,\n        \"row_count\": 1,\n        \"pagination\": {\n            \"pagination_id\": \"\"\n        }\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Framework ",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{X-API-KEY}}",
+            "type": "text"
+          },
+          {
+            "key": "X-API-SECRET",
+            "value": "{{X-API-SECRET}}",
+            "type": "text"
+          },
+          {
+            "key": "X-TIDENT",
+            "value": "{{X-TIDENT}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/:frameworkID",
+          "host": [
+            "{{host-url}}"
+          ],
+          "path": [
+            "privaci",
+            "v1",
+            "admin",
+            "compliance",
+            "framework",
+            ":frameworkID"
+          ],
+          "variable": [
+            {
+              "key": "frameworkID",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "[200] Delete Framework",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "X-API-Key",
+                "value": "{{X-API-KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "X-API-SECRET",
+                "value": "{{X-API-SECRET}}",
+                "type": "text"
+              },
+              {
+                "key": "X-TIDENT",
+                "value": "{{X-TIDENT}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{host-url}}/privaci/v1/admin/compliance/framework/:frameworkID",
+              "host": [
+                "{{host-url}}"
+              ],
+              "path": [
+                "privaci",
+                "v1",
+                "admin",
+                "compliance",
+                "framework",
+                ":frameworkID"
+              ],
+              "variable": [
+                {
+                  "key": "frameworkID",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Tue, 04 Aug 2026 12:21:59 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "content-security-policy",
+              "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=315360000"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": 0,\n    \"message\": \"Deletion successful\"\n}"
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "host-url",
+      "value": ""
+    },
+    {
+      "key": "X-API-KEY",
+      "value": ""
+    },
+    {
+      "key": "X-API-SECRET",
+      "value": ""
+    },
+    {
+      "key": "X-TIDENT",
+      "value": ""
+    },
+    {
+      "key": "X-ORG-ID",
+      "value": ""
+    },
+    {
+      "key": "Authorization",
+      "value": ""
+    }
+  ]
+}

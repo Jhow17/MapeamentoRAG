@@ -5,7 +5,7 @@ updated: 2026-06-10T15:21:17Z
 published: 2026-06-10T15:21:17Z
 canonical: "helpcenter.securiti.ai/edc-health-dashboard"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

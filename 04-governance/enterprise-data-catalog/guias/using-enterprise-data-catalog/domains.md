@@ -7,7 +7,7 @@ published: 2026-08-31T21:00:01Z
 canonical: "helpcenter.securiti.ai/domains"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

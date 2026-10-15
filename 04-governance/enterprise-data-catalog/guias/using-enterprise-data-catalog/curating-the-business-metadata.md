@@ -5,7 +5,7 @@ updated: 2025-11-03T04:35:50Z
 published: 2025-11-03T04:35:50Z
 canonical: "helpcenter.securiti.ai/curating-the-business-metadata"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

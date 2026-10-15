@@ -5,7 +5,7 @@ updated: 2025-11-03T04:47:30Z
 published: 2025-11-03T04:47:30Z
 canonical: "helpcenter.securiti.ai/edc-nodes"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

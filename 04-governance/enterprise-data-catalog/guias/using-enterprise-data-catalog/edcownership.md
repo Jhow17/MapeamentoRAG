@@ -6,7 +6,7 @@ published: 2026-07-21T12:24:26Z
 canonical: "helpcenter.securiti.ai/edcownership"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

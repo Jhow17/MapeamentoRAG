@@ -6,7 +6,7 @@ updated: 2025-11-04T06:24:06Z
 published: 2025-11-04T06:24:06Z
 canonical: "helpcenter.securiti.ai/using-enterprise-data-catalog"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

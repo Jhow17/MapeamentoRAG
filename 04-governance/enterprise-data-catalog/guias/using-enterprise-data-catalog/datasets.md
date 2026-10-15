@@ -5,7 +5,7 @@ updated: 2026-09-08T21:00:16Z
 published: 2026-09-08T21:00:16Z
 canonical: "helpcenter.securiti.ai/datasets"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

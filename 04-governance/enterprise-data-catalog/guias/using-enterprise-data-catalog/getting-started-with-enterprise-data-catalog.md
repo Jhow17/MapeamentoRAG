@@ -6,7 +6,7 @@ published: 2026-07-21T12:56:52Z
 canonical: "helpcenter.securiti.ai/getting-started-with-enterprise-data-catalog"
 stale: true
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

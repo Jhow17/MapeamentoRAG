@@ -12,6 +12,21 @@ data_captura: 2026-10-08
 
 # Securiti Settings release notes
 
+## 1.152
+
+### Release updates - October 2026
+
+#### Early announcement for API rate limiting
+
+With the release 1.153, Securiti will introduce rate limiting on API in release 1.153, where each tenant gets up to 30,000 requests per 15 minutes. This limit is only for requests made with API keys and secrets, and it divides 30,000 requests number among all the modules. Requests made through the UI will not count toward the limit. This keeps API performance stable for all tenants.
+
+> [!NOTE]
+> Note
+> 
+> If you need a higher limit, you can contact your Customer Success Manager or Account Representative.
+
+---
+
 ## 1.151
 
 ### Release updates - September 2026

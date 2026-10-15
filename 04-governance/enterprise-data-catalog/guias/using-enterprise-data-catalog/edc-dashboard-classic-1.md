@@ -5,7 +5,7 @@ updated: 2026-09-21T11:32:58Z
 published: 2026-09-21T21:00:01Z
 canonical: "helpcenter.securiti.ai/edc-dashboard-classic-1"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

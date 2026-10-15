@@ -5,7 +5,7 @@ updated: 2025-11-03T04:48:49Z
 published: 2025-11-03T04:48:49Z
 canonical: "helpcenter.securiti.ai/charts"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---

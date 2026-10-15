@@ -5,7 +5,7 @@ updated: 2026-10-05T09:25:04Z
 published: 2026-10-05T09:25:04Z
 canonical: "helpcenter.securiti.ai/lookerml-ingestion"
 area: governance
-modulo: enterprise-data-catalo
+modulo: enterprise-data-catalog
 tipo: guia
 data_captura: 2026-10-08
 ---
