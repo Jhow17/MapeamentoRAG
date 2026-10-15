@@ -6,7 +6,7 @@ published: 2026-09-21T21:00:02Z
 canonical: "helpcenter.securiti.ai/compliance-release-notes"
 area: dspm
 modulo: compliance
-tipo: guia
+tipo: release
 data_captura: 2026-10-06
 ---
 

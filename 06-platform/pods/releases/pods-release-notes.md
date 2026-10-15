@@ -6,7 +6,7 @@ published: 2026-09-21T21:00:02Z
 canonical: "helpcenter.securiti.ai/pods-release-notes"
 area: platform
 modulo: pods
-tipo: guia
+tipo: release
 data_captura: 2026-10-08
 ---
 

@@ -4,8 +4,8 @@ slug: "rot-data-minimization-for-large-enterprises"
 updated: 2026-10-01T04:21:28Z
 published: 2026-10-01T04:21:28Z
 canonical: "helpcenter.securiti.ai/rot-data-minimization-for-large-enterprises"
-area: solution-briefs
-modulo: rot-data-minimization
+area: geral
+modulo: solution-briefs
 tipo: guia
 data_captura: 2026-10-13
 ---
